@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./Components/Header";
+import HeroSection from "./Components/HeroSection";
+import "./App.css";
+import ExploreOurPersonal from "./Components/ExploreOurPersonal";
+import WeAreAwardWinning from "./Components/WeAreAwardWinning";
+import GreatFeaturestoDo from "./Components/GreatFeaturestoDo";
+import CheckOutOurRecentProject from "./Components/CheckOutOurRecentProject";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+
+    <div className="App mx-[auto] ">
+      {/* Head */}
+      <div className="bg-[url('/public/assets/hero-backgroung.svg')] ">
+        <Header />
+        <HeroSection />
+      </div>
+        
+      <ExploreOurPersonal/>
+      <WeAreAwardWinning/>
+      <GreatFeaturestoDo/>
+      <CheckOutOurRecentProject/>
+      </div>
   );
 }
 
