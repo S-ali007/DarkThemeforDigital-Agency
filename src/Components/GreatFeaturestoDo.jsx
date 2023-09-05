@@ -78,7 +78,7 @@ function GreatFeaturestoDo() {
               {/* ------- */}
             </div>
              {/* item-2-graphic design */}
-             <div className="max-w-[470px] w-full flex  gap-[25px]  bg-[#292738]   rounded-[8px] pt-[25px] pb-[23px] px-[30px]  justify-center align-middle">
+             <div className="max-w-[470px] relative left-[61px]  w-full flex  gap-[25px]  bg-[#292738]   rounded-[8px] pt-[25px] pb-[23px] px-[30px]  justify-center align-middle">
               <div className="max-w-[70px] w-full">
                 <img
                   src="/assets/Great work Graphic design item 1.svg"
@@ -114,7 +114,7 @@ function GreatFeaturestoDo() {
               {/* ------- */}
             </div>
              {/* item-3-graphic design */}
-             <div className="max-w-[470px] w-full flex  gap-[25px]  bg-[#292738]   rounded-[8px] pt-[25px] pb-[23px] px-[30px]  justify-center align-middle">
+             <div className="max-w-[470px] relative left-[108px] w-full flex  gap-[25px]  bg-[#292738]   rounded-[8px] pt-[25px] pb-[23px] px-[30px]  justify-center align-middle">
               <div className="max-w-[70px] w-full">
                 <img
                   src="/assets/Great work Graphic design item 1.svg"
@@ -150,7 +150,7 @@ function GreatFeaturestoDo() {
               {/* ------- */}
             </div>
              {/* item-4-graphic design */}
-             <div className="max-w-[470px] w-full flex  gap-[25px]  bg-[#292738]   rounded-[8px] pt-[25px] pb-[23px] px-[30px]  justify-center align-middle">
+             <div className="max-w-[470px] relative left-[-28px] w-full flex  gap-[25px]  bg-[#292738]   rounded-[8px] pt-[25px] pb-[23px] px-[30px]  justify-center align-middle">
               <div className="max-w-[70px] w-full">
                 <img
                   src="/assets/Great work Graphic design item 1.svg"
@@ -186,7 +186,7 @@ function GreatFeaturestoDo() {
               {/* ------- */}
             </div>
              {/* item-5-graphic design */}
-             <div className="max-w-[470px] w-full flex  gap-[25px]  bg-[#292738]   rounded-[8px] pt-[25px] pb-[23px] px-[30px]  justify-center align-middle">
+             <div className="max-w-[470px]  relative left-[-201px] w-full flex  gap-[25px]  bg-[#292738]   rounded-[8px] pt-[25px] pb-[23px] px-[30px]  justify-center align-middle">
               <div className="max-w-[70px] w-full">
                 <img
                   src="/assets/Great work Graphic design item 1.svg"
