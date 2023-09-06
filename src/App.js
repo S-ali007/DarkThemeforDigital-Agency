@@ -5,6 +5,7 @@ import ExploreOurPersonal from "./Components/ExploreOurPersonal";
 import WeAreAwardWinning from "./Components/WeAreAwardWinning";
 import GreatFeaturestoDo from "./Components/GreatFeaturestoDo";
 import CheckOutOurRecentProject from "./Components/CheckOutOurRecentProject";
+import ManagebussinessSeo from "./Components/ManagebussinessSeo";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <WeAreAwardWinning/>
       <GreatFeaturestoDo/>
       <CheckOutOurRecentProject/>
+      <ManagebussinessSeo/>
       </div>
   );
 }

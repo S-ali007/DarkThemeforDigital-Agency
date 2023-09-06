@@ -31,16 +31,18 @@ function GreatFeaturestoDo() {
             </div>
           </div>
         </div>
-        <div className="flex align-middle mt-[76px] gap-[58px]">
+        <div className="flex  mt-[76px] gap-[58px]">
           {/* left side */}
-          <div className="max-w-[536px] w-full flex justify-end items-center">
-            <img
+          <div className="max-w-[536px] w-full">
+            <div className="mt-[45px]"> <img
+            
               src="/assets/Great Features- leftside-icon-two-dark.svg"
               alt=""
-            />
+            /></div>
+           
           </div>
           {/* right side */}
-          <div className="flex   flex-col gap-[30px]" >
+          <div className="flex   flex-col gap-[30px] items-center" >
             {/* item-1-graphic design */}
             <div className="max-w-[470px] w-full flex  gap-[25px]  bg-[#292738]   rounded-[8px] pt-[25px] pb-[23px] px-[30px]  justify-center align-middle">
               <div className="max-w-[70px] w-full">
@@ -81,7 +83,7 @@ function GreatFeaturestoDo() {
              <div className="max-w-[470px] relative left-[61px]  w-full flex  gap-[25px]  bg-[#292738]   rounded-[8px] pt-[25px] pb-[23px] px-[30px]  justify-center align-middle">
               <div className="max-w-[70px] w-full">
                 <img
-                  src="/assets/Great work Graphic design item 1.svg"
+                  src="/assets/Great work Graphic design item 2.svg"
                   alt=""
                 />
               </div>
@@ -117,7 +119,7 @@ function GreatFeaturestoDo() {
              <div className="max-w-[470px] relative left-[108px] w-full flex  gap-[25px]  bg-[#292738]   rounded-[8px] pt-[25px] pb-[23px] px-[30px]  justify-center align-middle">
               <div className="max-w-[70px] w-full">
                 <img
-                  src="/assets/Great work Graphic design item 1.svg"
+                  src="/assets/Great work Graphic design item 3.svg"
                   alt=""
                 />
               </div>
@@ -153,7 +155,7 @@ function GreatFeaturestoDo() {
              <div className="max-w-[470px] relative left-[-28px] w-full flex  gap-[25px]  bg-[#292738]   rounded-[8px] pt-[25px] pb-[23px] px-[30px]  justify-center align-middle">
               <div className="max-w-[70px] w-full">
                 <img
-                  src="/assets/Great work Graphic design item 1.svg"
+                  src="/assets/Great work Graphic design item 4.svg"
                   alt=""
                 />
               </div>
@@ -189,7 +191,7 @@ function GreatFeaturestoDo() {
              <div className="max-w-[470px]  relative left-[-201px] w-full flex  gap-[25px]  bg-[#292738]   rounded-[8px] pt-[25px] pb-[23px] px-[30px]  justify-center align-middle">
               <div className="max-w-[70px] w-full">
                 <img
-                  src="/assets/Great work Graphic design item 1.svg"
+                  src="/assets/Great work Graphic design item 5.svg"
                   alt=""
                 />
               </div>

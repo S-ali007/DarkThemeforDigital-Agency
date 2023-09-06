@@ -4,7 +4,7 @@ function CheckOutOurRecentProject() {
   return (
     <div className=" bg-[#000A1F] max-w-[1920px] w-full  mx-auto pt-[128px]">
       {/* main heading */}
-      <div className=" max-w-[1305px] w-full mx-auto">
+      <div className=" max-w-[1364px] w-full mx-auto">
         <div className="flex  items-center    pr-[20px] justify-center ">
           <div className="max-w-[437px] w-full text-[42px] tracking-[0.42px] font-Jost absolute  font-[600px] leading-[53px] text-[white]  pt-[83px] mt-[10px] align-middle justify-center text-center ">
             <p>Checkout our Recently Completed Projects</p>
@@ -34,22 +34,35 @@ function CheckOutOurRecentProject() {
 
         {/* Cards-div */}
         <div className="flex mt-[70px] justify-center items-center gap-[30px] max-w-[1170px] w-full">
+          <div className="max-w-[370px] w-full">
             <div className="max-w-[370px] w-full">
-                <div className="max-w-[370px] w-full">
-                    <img src="/assets/checkout our card-1.svg" alt="" />
-                </div>
+              <img src="/assets/checkout our card-1.svg" alt="" />
             </div>
+          </div>
+          <div className="max-w-[370px] w-full">
             <div className="max-w-[370px] w-full">
-                <div className="max-w-[370px] w-full">
-                    <img src="/assets/checkout our card-2.svg" alt="" />
-                </div>
+              <img src="/assets/checkout our card-2.svg" alt="" />
             </div>
+          </div>
+          <div className="max-w-[370px] w-full">
             <div className="max-w-[370px] w-full">
-                <div className="max-w-[370px] w-full">
-                    <img src="/assets/checkout our card-3.svg" alt="" />
-                </div>
+              <img src="/assets/checkout our card-3.svg" alt="" />
             </div>
-            
+          </div>
+        </div>
+        <div className="mt-[60px] flex justify-center items-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="90"
+            height="10"
+            viewBox="0 0 90 10"
+            fill="none"
+          >
+            <rect width="10" height="10" rx="5" fill="#D1CFDB" />
+            <rect x="20" width="30" height="10" rx="5" fill="#6D18EF" />
+            <rect x="60" width="10" height="10" rx="5" fill="#D1CFDB" />
+            <rect x="80" width="10" height="10" rx="5" fill="#D1CFDB" />
+          </svg>
         </div>
       </div>
     </div>
