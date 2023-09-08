@@ -11,6 +11,8 @@ module.exports = {
         Inter:['Inter'],
         Jost:['Jost'],
         kumbh:['Kumbh Sans'],
+        saira:['Saira'],
+        Nunito:['Nunito'],
       
       },
       fontSize: {
@@ -19,7 +21,8 @@ module.exports = {
       backgroundImage: {
         'hero-pattern': "url('/public/assets/hero-backgroung.svg')",
 
-      }
+      },
+    
     },
   },
   plugins: [],

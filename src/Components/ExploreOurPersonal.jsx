@@ -2,7 +2,7 @@ import React from "react";
 
 function ExploreOurPersonal() {
   return (
-    <div className="bg-[#000A1F] max-w-[1920px] w-full  mx-auto pt-[127px]  ">
+    <div className="bg-[#000A1F] max-w-[1920px] w-full  mx-auto pt-[117px]  ">
       <div className="flex  items-center   max-w-[1430px] w-full mx-auto pl-[20px]   ">
         {/* Icons-And-Img-left */}
         <div className="flex justify-center items-center gap-[21px] ">
@@ -15,11 +15,15 @@ function ExploreOurPersonal() {
         </div>
         {/* Right-Logo */}
         <div className="flex flex-col gap-[72px] justify-start mt-[35px]">
-          <div>
-            <div className="max-w-[489px] w-full text-[42px] font-Jost absolute pl-[33px] pt-[53px] font-[600px] leading-[53px] text-[white] tracking-[0.42px]">
-              <h1> Explore Our Professional Business Solutions</h1>
+          <div className="max-w-[530px] w-full text-[42px] font-Jost absolute pl-[40px] pt-[65px] font-[600] leading-[53px] text-[white] tracking-[0.42px]">
+            Explore Our Professional Business Solutions
+          </div>
+
+          <div className="max-w-[401px]  w-full relative  ">
+            <div className="relative top-[40px] left-10  max-w-[84px] w-full">
+              <img className="" src="/assets/pseudo.svg" alt="" />
             </div>
-            <div className="max-w-[555px]  w-full">
+            <div className="max-w-[772px] w-full ">
               <svg
                 width="759"
                 height="116"
@@ -36,57 +40,70 @@ function ExploreOurPersonal() {
             </div>
           </div>
 
-          
-      {/* bussiness Growth,user Research ,big data  options */}
+          {/* bussiness Growth,user Research ,big data  options */}
           <div className="grid grid-cols-2 mt-[72px] ml-[99px] max-w-[688px] w-full gap-y-[80px] gap-x-[107px] pb-[62px]">
             <div className="max-w-[290px] w-full flex  gap-[25px]">
               {" "}
               <div className="">
-              <img src="/assets/WeHaveMoreBg-Pc.svg" alt="" />
+                <img src="/assets/WeHaveMoreBg-Pc.svg" alt="" />
               </div>
               <div className="max-w-[205px] w-full">
-                <div className="max-w-[205px] w-full font-[600] leading-[28px]  text-[24px] font-Jost text-[#FFF]">Business Growth</div>
-                
-                <div className=" w-[210px]  justify-center text-[#67687A] font-[400] text-[16px] leading-[28px]  font-kumbh">Sed perspiciatis unde omnis natus error voluptatem</div>
-              </div>
-            </div>
-             <div className="max-w-[290px] w-full flex gap-[25px]">
-              {" "}
-              <div className="">
-              <img src="/assets/userResearch.svg" alt="" />
-              </div>
-              <div>
-                <div className="max-w-[205px] w-full text-[24px] font-Jost text-[#FFF]">User Research</div>
-                
-                <div className="w-[210px]   text-[#67687A]  font-kumbh">Sed perspiciatis unde omnis natus error voluptatem</div>
+                <div className="max-w-[205px] w-full font-[600] leading-[28px]  text-[24px] font-Jost text-[#FFF]">
+                  Business Growth
+                </div>
+
+                <div className=" w-[210px]  justify-center text-[#67687A] font-[400] text-[16px] leading-[28px]  font-kumbh">
+                  Sed perspiciatis unde omnis natus error voluptatem
+                </div>
               </div>
             </div>
             <div className="max-w-[290px] w-full flex gap-[25px]">
               {" "}
               <div className="">
-              <img src="/assets/bigdataSolution.svg" alt="" />
+                <img src="/assets/userResearch.svg" alt="" />
               </div>
               <div>
-                <div className="max-w-[205px] w-full text-[24px] font-Jost text-[#FFF]">Big Data Solution</div>
-                
-                <div className="w-[210px]   text-[#67687A]  font-kumbh">Sed perspiciatis unde omnis natus error voluptatem</div>
+                <div className="max-w-[205px] w-full text-[24px] font-Jost text-[#FFF]">
+                  User Research
+                </div>
+
+                <div className="w-[210px]   text-[#67687A]  font-kumbh">
+                  Sed perspiciatis unde omnis natus error voluptatem
+                </div>
               </div>
             </div>
             <div className="max-w-[290px] w-full flex gap-[25px]">
               {" "}
               <div className="">
-              <img src="/assets/productDesign.svg" alt="" />
+                <img src="/assets/bigdataSolution.svg" alt="" />
               </div>
               <div>
-                <div className="max-w-[205px] w-full text-[24px] font-Jost text-[#FFF]">Product Design</div>
-                
-                <div className="w-[210px]  text-[#67687A]  font-kumbh">Sed perspiciatis unde omnis natus error voluptatem</div>
+                <div className="max-w-[205px] w-full text-[24px] font-Jost text-[#FFF]">
+                  Big Data Solution
+                </div>
+
+                <div className="w-[210px]   text-[#67687A]  font-kumbh">
+                  Sed perspiciatis unde omnis natus error voluptatem
+                </div>
               </div>
             </div>
-           
+            <div className="max-w-[290px] w-full flex gap-[25px]">
+              {" "}
+              <div className="">
+                <img src="/assets/productDesign.svg" alt="" />
+              </div>
+              <div>
+                <div className="max-w-[205px] w-full text-[24px] font-Jost text-[#FFF]">
+                  Product Design
+                </div>
+
+                <div className="w-[210px]  text-[#67687A]  font-kumbh">
+                  Sed perspiciatis unde omnis natus error voluptatem
+                </div>
+              </div>
+            </div>
           </div>
-          </div>
-        
+        </div>
       </div>
     </div>
   );

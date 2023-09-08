@@ -3,8 +3,8 @@ import React from "react";
 function ManagebussinessSeo() {
   return (
     <div className="bg-[#000A1F] max-w-[1920px] w-full  mx-auto pt-[128px]">
-      <div className="max-w-[1364px] w-full  mx-auto pl-[30px] pt-[50px]">
-        <div className="flex   justify-between pb-[56px]">
+      <div className="max-w-[1500px] w-full  mx-auto pl-[30px] pt-[50px]">
+        <div className="flex   justify-end pb-[56px] gap-[108px]">
           <div className="">
             {/* main-heading-Manage-bussiness-seo */}
             <div>
@@ -13,7 +13,7 @@ function ManagebussinessSeo() {
               </div>
 
               <div className="max-w-[401px]  w-full relative  ">
-                <div className="relative top-[40px] left-10 ">
+                <div className="relative top-[40px] left-10 max-w-[84px] w-full ">
                   <img className="" src="/assets/pseudo.svg" alt="" />
                 </div>
                 <div className=" ">
@@ -33,7 +33,7 @@ function ManagebussinessSeo() {
                 </div>
               </div>
               {/* paragraph-section-left*/}
-              <div className="mt-[104px]  text-[#A8ADB3] font-[18px]   font-kumbh leading-[32px] max-w-[437px] w-full ml-[40px]">
+              <div className="mt-[72px]  text-[#A8ADB3] text-[16px]  font-kumbh leading-[32px] max-w-[437px] w-full ml-[40px]">
                 <p>
                   Quis autem vel eum iure reprehenderit qui in ea voluptates
                   velit esse quam molestiae consequatur velillum
@@ -111,7 +111,7 @@ function ManagebussinessSeo() {
           </div>
           {/* right-logo */}
           <div className="max-w-[701px] w-full ">
-            <img className="w-full h-full object-cover object-center" src="/assets/managebussinessSeo-right-logo.svg" alt="" />
+            <img className="" src="/assets/managebussinessSeo-right-logo.svg" alt="" />
           </div>
         </div>
       </div>

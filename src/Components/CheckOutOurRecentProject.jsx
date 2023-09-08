@@ -10,8 +10,8 @@ function CheckOutOurRecentProject() {
             <p>Checkout our Recently Completed Projects</p>
           </div>
 
-          <div className="max-w-[732px] w-full relative  ">
-            <div className="relative top-[40px]  justify-center  flex  ">
+          <div className="max-w-[732px] w-full relative flex flex-col items-center ">
+            <div className="relative top-[40px] max-w-[84px] w-full justify-center  flex  ">
               <img className="" src="/assets/pseudo.svg" alt="" />
             </div>
             <div className="max-w-[732px] w-full ">
@@ -33,7 +33,7 @@ function CheckOutOurRecentProject() {
         </div>
 
         {/* Cards-div */}
-        <div className="flex mt-[70px] justify-center items-center gap-[30px] max-w-[1170px] w-full">
+        <div className="flex mt-[70px] mx-auto justify-center items-center gap-[30px] max-w-[1170px] w-full">
           <div className="max-w-[370px] w-full">
             <div className="max-w-[370px] w-full">
               <img src="/assets/checkout our card-1.svg" alt="" />

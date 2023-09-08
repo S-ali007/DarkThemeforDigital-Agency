@@ -6,6 +6,10 @@ import WeAreAwardWinning from "./Components/WeAreAwardWinning";
 import GreatFeaturestoDo from "./Components/GreatFeaturestoDo";
 import CheckOutOurRecentProject from "./Components/CheckOutOurRecentProject";
 import ManagebussinessSeo from "./Components/ManagebussinessSeo";
+import LetsSeeOurcompany from "./Components/LetsSeeOurcompany";
+import PeopleSayAboutOurSupport from "./Components/PeopleSayAboutOurSupport";
+import ReadytoWorktogether from "./Components/ReadytoWorktogether";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -23,6 +27,11 @@ function App() {
       <GreatFeaturestoDo/>
       <CheckOutOurRecentProject/>
       <ManagebussinessSeo/>
+      <LetsSeeOurcompany/>
+      <PeopleSayAboutOurSupport/>
+      <ReadytoWorktogether/>
+      <Footer/>
+
       </div>
   );
 }
