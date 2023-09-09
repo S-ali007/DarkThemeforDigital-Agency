@@ -1,6 +1,20 @@
-import React from "react";
+
+
+// import Swiper core and required modules
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+import { useRef } from "react";
 
 function HeroSection({ extraClasses }) {
+  const swiperRef = useRef();
+
   return (
     <>
       <div className="flex flex-col justify-center items-center relative pr-[90px]">
@@ -10,11 +24,16 @@ function HeroSection({ extraClasses }) {
           </div>
 
           <div className="pt-[8px] ">
-            <div className=""><img src="/assets/Image3.svg" alt="" /></div>
             <div className="">
-              <img className="relative left-[95%] bottom-[4rem]  z-10 m-0" src="/assets/moon.svg" alt="" />
-              </div>
-            
+              <img src="/assets/Image3.svg" alt="" />
+            </div>
+            <div className="">
+              <img
+                className="relative left-[95%] bottom-[4rem]  z-10 m-0"
+                src="/assets/moon.svg"
+                alt=""
+              />
+            </div>
           </div>
         </div>
         <div className="relative top-[309px] left-[50px]  ">
@@ -100,9 +119,10 @@ function HeroSection({ extraClasses }) {
               </div>
 
               <div className="max-w-[1147px] w-full  mt-[60px] pt-[16px] pb-[3px]  border-t-[#464548] border-t flex justify-between ">
-                <button>
+                {/* <button>
                   <img src="assets/Button-logo-Brand.svg" alt="" />
                 </button>
+
                 <div className="flex gap-[64px] px-[24px]">
                   <div className="max-w-[146px] w-full">
                     {" "}
@@ -126,6 +146,64 @@ function HeroSection({ extraClasses }) {
                   </div>
                 </div>
                 <button>
+                  <img src="assets/Button-right.svg" alt="" />
+                </button> */}
+
+                <button onClick={() => swiperRef.current?.slidePrev()}>
+                  <img src="assets/Button-logo-Brand.svg" alt="" />
+                </button>
+                <Swiper
+                  className="my-swiper"
+                  // install Swiper modules
+                  modules={[Navigation]}
+                  onBeforeInit={(swiper) => {
+                    swiperRef.current = swiper;
+                  }}
+                  spaceBetween={50}
+                  slidesPerView={5}
+                  // navigation
+                  // Other Swiper props
+                  // pagination={{ clickable: true }}
+                  // scrollbar={{ draggable: false }}
+                  onSwiper={(swiper) => console.log(swiper)}
+                  onSlideChange={() => console.log("slide change")}
+                >
+                  <SwiperSlide>
+                    <img src="/assets/movenpick.svg" alt="" />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    {" "}
+                    <img src="/assets/razamwal.svg" alt="" />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <img src="/assets/rozegal.svg" alt="" />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <img src="/assets/eyab.svg" alt="" />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    {" "}
+                    <img src="/assets/concile-of -health.svg" alt="" />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <img src="/assets/movenpick.svg" alt="" />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    {" "}
+                    <img src="/assets/razamwal.svg" alt="" />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <img src="/assets/rozegal.svg" alt="" />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <img src="/assets/eyab.svg" alt="" />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    {" "}
+                    <img src="/assets/concile-of -health.svg" alt="" />
+                  </SwiperSlide>
+                </Swiper>
+                <button className="" onClick={() => swiperRef.current?.slideNext()}>
                   <img src="assets/Button-right.svg" alt="" />
                 </button>
               </div>

@@ -1,9 +1,33 @@
 import React from "react";
+import { useState } from "react";
 
 function WeAreAwardWinning() {
+  const [items, setitems] = useState([
+    {
+      title:" Tech Solutions"
+      
+    },
+    {
+      title:"IT Consulting"
+      
+    },
+    {
+      title:"Web Solutions"
+      
+    },
+    {
+      title:"Business Growth"
+      
+    },
+    {
+      title:"Product Design"
+      
+    },
+
+  ])
   return (
     <div className=" bg-[#000A1F] max-w-[1920px] w-full  mx-auto pt-[127px] ">
-      <div className="flex  items-center    max-w-[1430px] w-full mx-auto pr-[20px] justify-end  ">
+      <div className="flex  items-center    max-w-[1430px] w-full mx-auto  justify-end gap-[64px]  ">
         {/* left-side content Award winning */}
         <div className="pb-[43px]">
           {/* logo for we are award winning */}
@@ -41,134 +65,14 @@ function WeAreAwardWinning() {
             </div>
           </div>
 
-          <div className="ml-[60px] max-w-[568px] w-full justify-end  ">
+          <div className="ml-[60px] max-w-[618px] w-full justify-end  ">
             {/* tech-solutions-items */}
-            <div className="  flex flex-wrap  mt-[32px] gap-[10px]">
-              {/* item-1 */}
-              <div className="max-w-[182px] w-full flex  bg-[#292738]  rounded-[5px] py-[15px] px-[18px] gap-[10px] justify-center align-middle">
-                <div className="max-w-[25px] w-full">
-                  <svg
-                    width="25"
-                    height="25"
-                    viewBox="0 0 25 25"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <rect
-                      width="25"
-                      height="25"
-                      rx="12.5"
-                      fill="url(#paint0_linear_70_142)"
-                    />
-                    <path
-                      d="M9.89258 17.2969L5.67773 13.082C5.42383 12.8281 5.42383 12.3965 5.67773 12.1426L6.5918 11.2285C6.8457 10.9746 7.25195 10.9746 7.50586 11.2285L10.375 14.0723L16.4688 7.97852C16.7227 7.72461 17.1289 7.72461 17.3828 7.97852L18.2969 8.89258C18.5508 9.14648 18.5508 9.57812 18.2969 9.83203L10.832 17.2969C10.5781 17.5508 10.1465 17.5508 9.89258 17.2969Z"
-                      fill="white"
-                    />
-                    <defs>
-                      <linearGradient
-                        id="paint0_linear_70_142"
-                        x1="25"
-                        y1="12.5"
-                        x2="0"
-                        y2="12.5"
-                        gradientUnits="userSpaceOnUse"
-                      >
-                        <stop stop-color="#186EF2" />
-                        <stop offset="1" stop-color="#6D18EF" />
-                      </linearGradient>
-                    </defs>
-                  </svg>
-                </div>
-                <div className=" max-w-[108px] w-full">
-                  <p className=" text-base text-[#fff] font-[600]  font-kumbh">
-                    Tech Solutions
-                  </p>
-                </div>
-              </div>
-              {/* item-2 */}
-              <div className="max-w-[182px] w-full flex   bg-[#292738]   rounded-[5px] py-[15px] px-[18px] gap-[10px] justify-center align-middle">
-                <div className="max-w-[25px] w-full">
-                  <svg
-                    width="25"
-                    height="25"
-                    viewBox="0 0 25 25"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <rect
-                      width="25"
-                      height="25"
-                      rx="12.5"
-                      fill="url(#paint0_linear_70_142)"
-                    />
-                    <path
-                      d="M9.89258 17.2969L5.67773 13.082C5.42383 12.8281 5.42383 12.3965 5.67773 12.1426L6.5918 11.2285C6.8457 10.9746 7.25195 10.9746 7.50586 11.2285L10.375 14.0723L16.4688 7.97852C16.7227 7.72461 17.1289 7.72461 17.3828 7.97852L18.2969 8.89258C18.5508 9.14648 18.5508 9.57812 18.2969 9.83203L10.832 17.2969C10.5781 17.5508 10.1465 17.5508 9.89258 17.2969Z"
-                      fill="white"
-                    />
-                    <defs>
-                      <linearGradient
-                        id="paint0_linear_70_142"
-                        x1="25"
-                        y1="12.5"
-                        x2="0"
-                        y2="12.5"
-                        gradientUnits="userSpaceOnUse"
-                      >
-                        <stop stop-color="#186EF2" />
-                        <stop offset="1" stop-color="#6D18EF" />
-                      </linearGradient>
-                    </defs>
-                  </svg>
-                </div>
-                <div className=" max-w-[108px] w-full">
-                  <p className=" text-base text-[#fff] font-[600]  font-kumbh">
-                    IT Consulting{" "}
-                  </p>
-                </div>
-              </div>
-              {/* item-3 */}
-              <div className="max-w-[182px] w-full flex   bg-[#292738]   rounded-[5px] py-[15px] px-[18px] gap-[10px] justify-center align-middle">
-                <div className="max-w-[25px] w-full">
-                  <svg
-                    width="25"
-                    height="25"
-                    viewBox="0 0 25 25"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <rect
-                      width="25"
-                      height="25"
-                      rx="12.5"
-                      fill="url(#paint0_linear_70_142)"
-                    />
-                    <path
-                      d="M9.89258 17.2969L5.67773 13.082C5.42383 12.8281 5.42383 12.3965 5.67773 12.1426L6.5918 11.2285C6.8457 10.9746 7.25195 10.9746 7.50586 11.2285L10.375 14.0723L16.4688 7.97852C16.7227 7.72461 17.1289 7.72461 17.3828 7.97852L18.2969 8.89258C18.5508 9.14648 18.5508 9.57812 18.2969 9.83203L10.832 17.2969C10.5781 17.5508 10.1465 17.5508 9.89258 17.2969Z"
-                      fill="white"
-                    />
-                    <defs>
-                      <linearGradient
-                        id="paint0_linear_70_142"
-                        x1="25"
-                        y1="12.5"
-                        x2="0"
-                        y2="12.5"
-                        gradientUnits="userSpaceOnUse"
-                      >
-                        <stop stop-color="#186EF2" />
-                        <stop offset="1" stop-color="#6D18EF" />
-                      </linearGradient>
-                    </defs>
-                  </svg>
-                </div>
-                <div className=" max-w-[108px] w-full">
-                  <p className=" text-base text-[#fff] font-[600]  font-kumbh">
-                    Web Solutions
-                  </p>
-                </div>
-              </div>
-              {/* item-4 */}
-              <div className="max-w-[199px] w-full flex bg-[#292738]  rounded-[5px] py-[15px] px-[18px] gap-[10px] justify-center align-middle">
+            <div className="  flex  mt-[32px] gap-[10px] flex-wrap ">
+              {/* items */}
+              {items.map((item ,id)=>{
+                return (
+                  <> 
+                  <div className="max-w-[199px] w-full flex  bg-[#292738]  rounded-[5px] py-[15px] px-[18px] gap-[10px] justify-center align-middle" key={id}>
                 <div className="max-w-[25px] w-full">
                   <svg
                     width="25"
@@ -204,51 +108,13 @@ function WeAreAwardWinning() {
                 </div>
                 <div className=" max-w-[125px] w-full">
                   <p className=" text-base text-[#fff] font-[600]  font-kumbh">
-                    Business Growth
+                    {item.title}
                   </p>
                 </div>
               </div>
-              {/* item-5 */}
-              <div className="max-w-[190px] w-full flex    bg-[#292738]   rounded-[5px] py-[15px] px-[18px] gap-[10px] justify-center align-middle">
-                <div className="max-w-[25px] w-full">
-                  <svg
-                    width="25"
-                    height="25"
-                    viewBox="0 0 25 25"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <rect
-                      width="25"
-                      height="25"
-                      rx="12.5"
-                      fill="url(#paint0_linear_70_142)"
-                    />
-                    <path
-                      d="M9.89258 17.2969L5.67773 13.082C5.42383 12.8281 5.42383 12.3965 5.67773 12.1426L6.5918 11.2285C6.8457 10.9746 7.25195 10.9746 7.50586 11.2285L10.375 14.0723L16.4688 7.97852C16.7227 7.72461 17.1289 7.72461 17.3828 7.97852L18.2969 8.89258C18.5508 9.14648 18.5508 9.57812 18.2969 9.83203L10.832 17.2969C10.5781 17.5508 10.1465 17.5508 9.89258 17.2969Z"
-                      fill="white"
-                    />
-                    <defs>
-                      <linearGradient
-                        id="paint0_linear_70_142"
-                        x1="25"
-                        y1="12.5"
-                        x2="0"
-                        y2="12.5"
-                        gradientUnits="userSpaceOnUse"
-                      >
-                        <stop stop-color="#186EF2" />
-                        <stop offset="1" stop-color="#6D18EF" />
-                      </linearGradient>
-                    </defs>
-                  </svg>
-                </div>
-                <div className=" max-w-[125px] w-full">
-                  <p className=" text-base text-[#fff] font-[600]  font-kumbh">
-                    Product Design
-                  </p>
-                </div>
-              </div>
+                  </>
+                )
+              })}
             </div>
           </div>
         </div>

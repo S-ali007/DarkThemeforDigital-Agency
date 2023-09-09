@@ -1,6 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
 
 function ManagebussinessSeo() {
+  const [show, setShow] = useState(false);
+  const [faqs, setfaqs] = useState([
+    {
+      question: "Why SEO Growth Business Strategy ?",
+      answer:
+        " On the other hand denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment blinded",
+      id: 1,
+      open: false,
+    },
+    {
+      question: "How We Help Your Projects ? ?",
+      answer:
+        " On the other hand denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment blinded",
+      id: 2,
+      open: false,
+    },
+    {
+      question: "Why SEO Growth Business Strategy ?",
+      answer:
+        " On the  hand denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment blinded",
+      id: 3,
+      open: false,
+    },
+  ]);
+  const handleClick = (id) => {
+    const newArr = faqs.map((item) => {
+      if (item.id === id) {
+        return { ...item, open: !item.open };
+      } else {
+        return item;
+      }
+    });
+
+    setfaqs(newArr);
+  };
+
   return (
     <div className="bg-[#000A1F] max-w-[1920px] w-full  mx-auto pt-[128px]">
       <div className="max-w-[1500px] w-full  mx-auto pl-[30px] pt-[50px]">
@@ -39,79 +75,56 @@ function ManagebussinessSeo() {
                   velit esse quam molestiae consequatur velillum
                 </p>
               </div>
-              {/* questions */}
-              <div className="max-w-[440px] w-full ml-[65px] mt-[16px] flex justify-center gap-[91px] bg-[#292738] border-b-[#2E2D2D] align-middle  pt-[17px] pr-[15.8px] pb-[18px] pl-[8px]">
-                <div className="max-w-[309px] w-full font-Jost text-[#fff] text-[18px] font-[600]  ">
-                  Why SEO Growth Business Strategy ?
-                </div>
-                <div className="  align-middle items-center justify-center flex">
-                  <svg
-                    width="16"
-                    height="15"
-                    viewBox="0 0 16 15"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M6.55859 1.34961L7.28906 0.619141C7.62109 0.320312 8.11914 0.320312 8.41797 0.619141L14.8926 7.06055C15.1914 7.39258 15.1914 7.89062 14.8926 8.18945L8.41797 14.6641C8.11914 14.9629 7.62109 14.9629 7.28906 14.6641L6.55859 13.9336C6.25977 13.6016 6.25977 13.1035 6.55859 12.7715L10.5762 8.95312H1.04688C0.582031 8.95312 0.25 8.62109 0.25 8.15625V7.09375C0.25 6.66211 0.582031 6.29688 1.04688 6.29688H10.5762L6.55859 2.51172C6.25977 2.17969 6.22656 1.68164 6.55859 1.34961Z"
-                      fill="white"
-                    />
-                  </svg>
-                </div>
-              </div>
-              <div className="max-w-[440px] w-full ml-[65px] mt-[10px] flex justify-center gap-[91px] bg-[#292738] border-b-[#2E2D2D] align-middle  pt-[17px] pr-[15.8px] pb-[18px] pl-[8px]">
-                <div className="max-w-[309px] w-full font-Jost text-[#fff] text-[18px] font-[600]  ">
-                  Why SEO Growth Business Strategy ?
-                </div>
-                <div className="  align-middle items-center justify-center flex">
-                  <svg
-                    width="16"
-                    height="15"
-                    viewBox="0 0 16 15"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M6.55859 1.34961L7.28906 0.619141C7.62109 0.320312 8.11914 0.320312 8.41797 0.619141L14.8926 7.06055C15.1914 7.39258 15.1914 7.89062 14.8926 8.18945L8.41797 14.6641C8.11914 14.9629 7.62109 14.9629 7.28906 14.6641L6.55859 13.9336C6.25977 13.6016 6.25977 13.1035 6.55859 12.7715L10.5762 8.95312H1.04688C0.582031 8.95312 0.25 8.62109 0.25 8.15625V7.09375C0.25 6.66211 0.582031 6.29688 1.04688 6.29688H10.5762L6.55859 2.51172C6.25977 2.17969 6.22656 1.68164 6.55859 1.34961Z"
-                      fill="white"
-                    />
-                  </svg>
-                </div>
-               
-              </div>
-              <div className="bg-[#232331] max-w-[440px] w-full ml-[65px] pt-[6px] pr-[13.3px] pb-[6px] pl-[8px]">
-                  <div className="text-[#67687A]">
-                    <p className="text-[16px]   font-kumbh leading-8">
-                      On the other hand denounce with righteous indignation and
-                      dislike men who are so beguiled and demoralized by the
-                      charms of pleasure of the moment blinded
-                    </p>
-                  </div>
-                </div>
-              <div className="max-w-[440px] w-full ml-[65px] mt-[10px] flex justify-center gap-[91px] bg-[#292738] border-b-[#2E2D2D] align-middle  pt-[17px] pr-[15.8px] pb-[18px] pl-[8px]">
-                <div className="max-w-[309px] w-full font-Jost text-[#fff] text-[18px] font-[600]  ">
-                  Why SEO Growth Business Strategy ?
-                </div>
-                <div className="  align-middle items-center justify-center flex">
-                  <svg
-                    width="16"
-                    height="15"
-                    viewBox="0 0 16 15"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M6.55859 1.34961L7.28906 0.619141C7.62109 0.320312 8.11914 0.320312 8.41797 0.619141L14.8926 7.06055C15.1914 7.39258 15.1914 7.89062 14.8926 8.18945L8.41797 14.6641C8.11914 14.9629 7.62109 14.9629 7.28906 14.6641L6.55859 13.9336C6.25977 13.6016 6.25977 13.1035 6.55859 12.7715L10.5762 8.95312H1.04688C0.582031 8.95312 0.25 8.62109 0.25 8.15625V7.09375C0.25 6.66211 0.582031 6.29688 1.04688 6.29688H10.5762L6.55859 2.51172C6.25977 2.17969 6.22656 1.68164 6.55859 1.34961Z"
-                      fill="white"
-                    />
-                  </svg>
-                </div>
+
+              <div className="">
+                {faqs.map((faq, id) => {
+                  return (
+                    <>
+                      <div
+                        onClick={() => {
+                          handleClick(faq.id);
+                        }}
+                        className="max-w-[440px] w-full ml-[65px] mt-[10px] flex justify-center gap-[91px] bg-[#292738] border-b-[#2E2D2D] align-middle  pt-[17px] pr-[15.8px] pb-[18px] pl-[8px]"
+                      >
+                        <div className="max-w-[309px] w-full font-Jost text-[#fff] text-[18px] font-[600]  ">
+                          {faq.question}
+                        </div>
+                        <div className="  align-middle items-center justify-center flex ">
+                          <svg
+                            className={`horizontal ${
+                              faq.open ? "rotate-90" : "rotate-0"
+                            }  duration-300 `}
+                            width="16"
+                            height="15"
+                            viewBox="0 0 16 15"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M6.55859 1.34961L7.28906 0.619141C7.62109 0.320312 8.11914 0.320312 8.41797 0.619141L14.8926 7.06055C15.1914 7.39258 15.1914 7.89062 14.8926 8.18945L8.41797 14.6641C8.11914 14.9629 7.62109 14.9629 7.28906 14.6641L6.55859 13.9336C6.25977 13.6016 6.25977 13.1035 6.55859 12.7715L10.5762 8.95312H1.04688C0.582031 8.95312 0.25 8.62109 0.25 8.15625V7.09375C0.25 6.66211 0.582031 6.29688 1.04688 6.29688H10.5762L6.55859 2.51172C6.25977 2.17969 6.22656 1.68164 6.55859 1.34961Z"
+                              fill="white"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                      {faq.open && (
+                        <div className="bg-[#232331] max-w-[440px] w-full ml-[65px] pt-[6px] pr-[13.3px] pb-[6px] pl-[8px]">
+                          <div className="text-[#67687A]">
+                            <p className="text-[16px]   font-kumbh leading-8">
+                              {faq.answer}
+                            </p>
+                          </div>
+                        </div>
+                      )}
+                    </>
+                  );
+                })}
               </div>
             </div>
           </div>
           {/* right-logo */}
           <div className="max-w-[701px] w-full ">
-            <img className="" src="/assets/managebussinessSeo-right-logo.svg" alt="" />
+            <img src="/assets/managebussinessSeo-right-logo.svg" alt="" />
           </div>
         </div>
       </div>
