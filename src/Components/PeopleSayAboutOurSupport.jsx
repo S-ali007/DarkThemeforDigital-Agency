@@ -2,7 +2,7 @@ import React from "react";
 
 function PeopleSayAboutOurSupport() {
   return (
-    <div className="bg-[#000A1F] max-w-[1920px] w-full  mx-auto  pt-[153px] pl-[106px] pr-[118px]">
+    <div className="bg-[#000A1F] max-w-[1920px] w-full  mx-auto  pt-[153px] pl-[106px] pr-[118px]" id="Clients">
       
       {/* main heading */}
       <div className="   pt-[31px] relative z-10">

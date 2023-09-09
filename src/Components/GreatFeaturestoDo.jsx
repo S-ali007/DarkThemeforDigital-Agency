@@ -26,7 +26,7 @@ function GreatFeaturestoDo() {
 
   ])
   return (
-    <div className=" bg-[#000A1F] max-w-[1920px] w-full  mx-auto pt-[127px]">
+    <div className=" bg-[#000A1F] max-w-[1920px] w-full  mx-auto pt-[127px] " id="Services">
       {/* main heading */}
       <div className=" max-w-[1305px] w-full mx-auto">
         <div className="flex  items-center    pr-[20px] justify-center ">

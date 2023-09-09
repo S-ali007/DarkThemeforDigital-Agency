@@ -16,8 +16,8 @@ function HeroSection({ extraClasses }) {
   const swiperRef = useRef();
 
   return (
-    <>
-      <div className="flex flex-col justify-center items-center relative pr-[90px]">
+    <div div className="" id="home">
+      <div className="flex flex-col justify-center items-center relative pr-[90px] " >
         <div className="flex justify-between mx-auto px-[50px] absolute top-0 max-w-[1422px] w-full ">
           <div className="pt-[50px]">
             <img src="/assets/bg-cloud-left.svg" alt="" />
@@ -211,7 +211,7 @@ function HeroSection({ extraClasses }) {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

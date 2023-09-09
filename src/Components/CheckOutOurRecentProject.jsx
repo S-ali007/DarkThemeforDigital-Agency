@@ -16,7 +16,7 @@ function CheckOutOurRecentProject() {
   };
 
   return (
-    <div className=" bg-[#000A1F] max-w-[1920px] w-full  mx-auto pt-[128px]">
+    <div className=" bg-[#000A1F] max-w-[1920px] w-full  mx-auto pt-[128px] " id="Projects">
       {/* main heading */}
       <div className=" max-w-[1364px] w-full mx-auto">
         <div className="flex  items-center    pr-[20px] justify-center ">

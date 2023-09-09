@@ -2,3 +2,7 @@
  {
   background: linear-gradient(180deg, #000a1f 0%, #000c2f 100%);
 }
+
+.body{
+scroll-behavior: smooth;
+}
