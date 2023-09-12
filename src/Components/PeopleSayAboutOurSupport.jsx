@@ -1,5 +1,9 @@
 import React from "react";
 import { useState } from "react";
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import PeopleSayAboutCards from "./PeopleSayAboutCards";
 
 function PeopleSayAboutOurSupport() {
   const [cards, setCards] = useState([
@@ -26,7 +30,7 @@ function PeopleSayAboutOurSupport() {
       {/* main heading */}
       <div className="   relative z-10">
         <div className="flex  items-center    pr-[20px] justify-center ">
-          <div className="max-w-[461px] w-full text-[42px] tracking-[0.42px] font-Jost absolute  font-[600px] leading-[53px] text-[white]  pt-[83px] mt-[10px] align-middle justify-center text-center ">
+          <div className="max-w-[461px] w-full text-[42px] tracking-[0.42px] font-Jost absolute  font-[600] leading-[53px] text-[white]  pt-[83px] mt-[10px] align-middle justify-center text-center ">
             <p>People’s Say About Our Support & Services</p>
           </div>
 
@@ -40,50 +44,56 @@ function PeopleSayAboutOurSupport() {
           </div>
         </div>
       </div>
-
-      <div className="  bg-[#000A1F] max-w-[1110px] w-full mx-auto ">
+     
+     <div className=" bg-[#000A1F] ml-[10%]   xl:w-[1130px]  absolute">
+      <div className="    ">
         {/* cards */}
-        <div className="flex mt-[56px] absolute  gap-[30px] items-center justify-center ">
+        
           {" "}
-          {/* card-1 */}
-          {cards.map((card, id) => {
-            return (
-              <>
-                <div
-                  className="max-w-[555px] w-full bg-[#292738] py-[50px] pl-[70px] pr-[50px]  "
-                  key={id}
-                >
-                  <div className="max-w-[66px] w-full">
-                    <img src={card.img} alt="" />
-                  </div>
-                  {/* card-text */}
-                  <div className="mt-[23px] max-w-[425px] w-full pt-[3px] pr-[1.33px] pb-[35px] border-b-[1px] border-[#464548]">
-                    <div className="text-[22px]   font-kumbh text-[#67687A] ">
-                      {card.text}
-                    </div>
-                  </div>
-                  {/*info-box-richards s.books  */}
-                  <div className="flex max-w-[425px] w-full justify-between items-center mt-[40px]">
-                    <div className=" flex flex-col gap-[4.8px]">
-                      <div className="text-[24px] font-Jost font-[600] text-[#FFF]">
-                        {card.username}
-                      </div>
-                      <div className="text-[16px]   font-kumbh text-[#67687A]  ">
-                        {card.designation}
-                      </div>
-                    </div>
-                    <div className="max-w-[101px] w-full">
-                      <img src="/assets/icon-chat-cards.svg" alt="" />
-                    </div>
-                  </div>
-                </div>
-              </>
-            );
-          })}
+          <Swiper
+            className="my-swiper  amx-w-[1130px] w-full mx-auto   "
+            // install Swiper modules
+            modules={[Navigation, Pagination, Scrollbar, A11y]}
+            spaceBetween={1}
+            slidesPerView={2}
+            // navigation
+
+            // Other Swiper props
+            pagination={{ bulletClass: "bg-red-500", clickable: true }}
+            // scrollbar={{ draggable: false }}
+            onSwiper={(swiper) => console.log(swiper)}
+            onSlideChange={() => console.log("slide change")}
+          >
+          
+            {cards.map((card, id) => {
+              return (
+                <>
+                  <SwiperSlide>
+                    <PeopleSayAboutCards
+                      designation={card.designation}
+                      img={card.img}
+                      username={card.username}
+                      id={id}
+                      text={card.text}
+                    />
+                  </SwiperSlide>
+                   <SwiperSlide>
+                    <PeopleSayAboutCards
+                      designation={card.designation}
+                      img={card.img}
+                      username={card.username}
+                      id={id}
+                      text={card.text}
+                    />
+                  </SwiperSlide>
+                </>
+              );
+            })}
+          </Swiper>
         </div>
       </div>
-
-      <div className="flex    justify-between relative mt-[-190px]">
+      
+      <div className="flex   justify-between relative mt-[-250px]">
         {/* left-bg img */}
         <div className=" relative   ">
           <img
