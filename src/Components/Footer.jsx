@@ -2,8 +2,8 @@ import React from "react";
 
 function Footer() {
   return (
-    <div className="bg-[#000A1F]   pt-[74px] px-[375px] pb-[30px] " id="contact">
-      <div className="max-w-[1114px] w-full mx-auto flex flex-col gap-[114px] ">
+    <div className="bg-[#000A1F]   pt-[74px] px-[375px] pb-[30px] " >
+      <div className="max-w-[1114px] w-full mx-auto flex flex-col gap-[114px] "id="About">
         <div className="flex  max-w-[1114px] w-full  gap-[108px] ">
           {/* logo div */}
           <div className="max-w-[193px] w-full flex flex-col gap-[59px]">

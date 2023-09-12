@@ -1,32 +1,48 @@
 import React from "react";
 
-function Header({extraClasses}) {
+function Header({ extraClasses }) {
   return (
-    <div className={`header z-10  fixed flex justify-center items-center gap-[147px] pt-[64px] pb-[7px]  ${extraClasses} mx-auto`}>
-     
-
+    <div
+      className={`header z-10   flex justify-center items-center gap-[147px] pt-[64px] pb-[7px]  ${extraClasses} mx-auto`}
+    >
       {/* navbar-logo */}
       <div>
-        <img src="/assets/Logo Navbar.svg" alt="" />
+        <a href="/home"><img src="/assets/Logo Navbar.svg" alt="" /></a>
+        
       </div>
       {/* navbar options */}
       <div className="  font-Jost flex  justify-between items-center gap-[44.5px]">
-        <a href="#home"><button className="flex  gap-[4.83px] justify-center items-center  max-w-[53px] w-full text-[#FFFFFF] font-[500] text-[20px] hover:underline underline-offset-[8px]">
-         <span>Home</span><img src="/assets/navbar-home-Arrow.svg" alt="" />
-        </button></a>
-        <a href="#Clients"><button className="flex  gap-[4.83px] justify-center items-center  max-w-[53px] w-full text-[#FFFFFF] font-[500] text-[20px] hover:underline underline-offset-[8px]">
-         <span>Clients</span><img src="/assets/navbar-home-Arrow.svg" alt="" />
-        </button></a>
-        <a href="#Services"><button className="flex  gap-[4.83px] justify-center items-center  max-w-[53px] w-full text-[#FFFFFF] font-[500] text-[20px] hover:underline underline-offset-[8px]">
-         <span>Services</span><img src="/assets/navbar-home-Arrow.svg" alt="" />
-        </button></a>
-        <a href="#Projects"><button className="flex  gap-[4.83px] justify-center items-center  max-w-[53px] w-full text-[#FFFFFF] font-[500] text-[20px] hover:underline underline-offset-[8px]">
-         <span>Projects</span><img src="/assets/navbar-home-Arrow.svg" alt="" />
-        </button></a>
-        <a href="#About"><button className="flex  gap-[4.83px] justify-center items-center  max-w-[53px] w-full text-[#FFFFFF] font-[500] text-[20px] hover:underline underline-offset-[8px]">
-         <span>About</span><img src="/assets/navbar-home-Arrow.svg" alt="" />
-        </button></a>
-        <button  className="flex  gap-[4.83px] justify-center items-center  max-w-[53px] w-full text-[#FFFFFF] font-[500] text-[20px] hover:underline underline-offset-[8px]">
+        <a href="#home">
+          <button className="flex  gap-[4.83px] justify-center items-center  max-w-[53px] w-full text-[#FFFFFF] font-[500] text-[20px] hover:underline underline-offset-[8px]">
+            <span>Home</span>
+            <img src="/assets/navbar-home-Arrow.svg" alt="" />
+          </button>
+        </a>
+        <a href="#Clients">
+          <button className="flex  gap-[4.83px] justify-center items-center  max-w-[53px] w-full text-[#FFFFFF] font-[500] text-[20px] hover:underline underline-offset-[8px]">
+            <span>Clients</span>
+            <img src="/assets/navbar-home-Arrow.svg" alt="" />
+          </button>
+        </a>
+        <a href="#Services">
+          <button className="flex  gap-[4.83px] justify-center items-center  max-w-[53px] w-full text-[#FFFFFF] font-[500] text-[20px] hover:underline underline-offset-[8px]">
+            <span>Services</span>
+            <img src="/assets/navbar-home-Arrow.svg" alt="" />
+          </button>
+        </a>
+        <a href="#Projects">
+          <button className="flex  gap-[4.83px] justify-center items-center  max-w-[53px] w-full text-[#FFFFFF] font-[500] text-[20px] hover:underline underline-offset-[8px]">
+            <span>Projects</span>
+            <img src="/assets/navbar-home-Arrow.svg" alt="" />
+          </button>
+        </a>
+        <a href="#About">
+          <button className="flex  gap-[4.83px] justify-center items-center  max-w-[53px] w-full text-[#FFFFFF] font-[500] text-[20px] hover:underline underline-offset-[8px]">
+            <span>About</span>
+            <img src="/assets/navbar-home-Arrow.svg" alt="" />
+          </button>
+        </a>
+        <button className="flex  gap-[4.83px] justify-center items-center  max-w-[53px] w-full text-[#FFFFFF] font-[500] text-[20px] hover:underline underline-offset-[8px]">
           <a href="#contact">Contact</a>
         </button>
       </div>
