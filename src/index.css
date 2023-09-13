@@ -14,7 +14,7 @@
   
   body {
     background: #eee;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    /* font-family: Helvetica Neue, Helvetica, Arial, sans-serif; */
     font-size: 14px;
     color: #000;
     margin: 0;
@@ -43,6 +43,28 @@
     height: 100%;
     object-fit: cover;
   }
+
+
+
+
+
+.swiper-pagination-bullet {
+  background-color: #D1CFDB !important;
+  opacity: 1 !important;
+}
+.swiper-pagination-bullet-active {
+  background-color: #6D18EF !important;
+  width:30px  !important ;
+  border-radius: 15px !important;
+}
+
+.swiper-wrapper{
+  padding-bottom: 62px;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
+  bottom: 0px !important;
+}
   
   @layer base {
     .font-outline-2 {

@@ -118,36 +118,8 @@ function HeroSection({ extraClasses }) {
                 </div>
               </div>
 
-              <div className="max-w-[1147px] w-full  mt-[60px] pt-[16px] pb-[3px]  border-t-[#464548] border-t flex justify-between ">
-                {/* <button>
-                  <img src="assets/Button-logo-Brand.svg" alt="" />
-                </button>
-
-                <div className="flex gap-[64px] px-[24px]">
-                  <div className="max-w-[146px] w-full">
-                    {" "}
-                    <img src="/assets/movenpick.svg" alt="" />
-                  </div>
-                  <div className="max-w-[146px] w-full">
-                    {" "}
-                    <img src="/assets/razamwal.svg" alt="" />
-                  </div>
-                  <div className="max-w-[146px] w-full">
-                    {" "}
-                    <img src="/assets/rozegal.svg" alt="" />
-                  </div>
-                  <div className="max-w-[146px] w-full">
-                    {" "}
-                    <img src="/assets/eyab.svg" alt="" />
-                  </div>
-                  <div className="max-w-[146px] w-full">
-                    {" "}
-                    <img src="/assets/concile-of -health.svg" alt="" />
-                  </div>
-                </div>
-                <button>
-                  <img src="assets/Button-right.svg" alt="" />
-                </button> */}
+              <div className="max-w-[1147px] w-full  mt-[60px] pt-[16px]   border-t-[#464548] border-t flex justify-between    ">
+        
 
                 <button onClick={() => swiperRef.current?.slidePrev()}>
                   <img src="assets/Button-logo-Brand.svg" alt="" />

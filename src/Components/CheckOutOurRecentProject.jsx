@@ -47,42 +47,125 @@ function CheckOutOurRecentProject() {
             // navigation
 
             // Other Swiper props
-            pagination={{ bulletClass: "bg-red-500", clickable: true }}
+            pagination={{ clickable: true }}
             // scrollbar={{ draggable: false }}
             onSwiper={(swiper) => console.log(swiper)}
             onSlideChange={() => console.log("slide change")}
           >
             <SwiperSlide>
-              <img src="/assets/checkout our card-1.svg" alt="" />
+              <div className="relative z-10">
+                <div className="absolute bottom-5 left-5 flex flex-col items-start ">
+                  <div className="max-w-[150px] w-full ] px-[37px] py-[5px] bg-gradient-to-r from-[#6D18EF] to-[#186EF2] text-[#fff]">
+                    <button className="max-w-[76px] w-full text-[16px]   font-kumbh ">
+                      Marketing
+                    </button>
+                  </div>
+                  <div className="max-w-[270px] w-full bg-[#292738] pl-[40px] pr-[85px] py-[21px]">
+                    <div className="text-[24px] font-[600] font-Jost text-[#fff] max-w-[149px] w-full text-left ">
+                      Tech Website Solution
+                    </div>
+                  </div>
+                </div>
+                <div className="">
+                  <img src="/assets/checkout our card-1.svg" alt="" />
+                </div>{" "}
+              </div>
             </SwiperSlide>
             <SwiperSlide>
-              {" "}
-              <img src="/assets/checkout our card-2.svg" alt="" />
+              <div className="relative z-10">
+                <div className="absolute bottom-5 left-5 flex flex-col items-start ">
+                  <div className="max-w-[150px] w-full ] px-[37px] py-[5px] bg-gradient-to-r from-[#6D18EF] to-[#186EF2] text-[#fff]">
+                    <button className="max-w-[76px] w-full text-[16px]   font-kumbh ">
+                      Tecnology
+                    </button>
+                  </div>
+                  <div className="max-w-[270px] w-full bg-[#292738] pl-[40px] pr-[85px] py-[21px]">
+                    <div className="text-[24px] font-[600] font-Jost text-[#fff] max-w-[149px] w-full text-left ">
+                      App Platform Integration
+                    </div>
+                  </div>
+                </div>
+                <div className="">
+                  <img src="/assets/checkout our card-2.svg" alt="" />
+                </div>{" "}
+              </div>
             </SwiperSlide>
             <SwiperSlide>
-              <img src="/assets/checkout our card-3.svg" alt="" />
+              <div className="relative z-10">
+                <div className="absolute bottom-5 left-5 flex flex-col items-start ">
+                  <div className="max-w-[150px] w-full ] px-[37px] py-[5px] bg-gradient-to-r from-[#6D18EF] to-[#186EF2] text-[#fff]">
+                    <button className="max-w-[76px] w-full text-[16px]   font-kumbh ">
+                      Software
+                    </button>
+                  </div>
+                  <div className="max-w-[270px] w-full bg-[#292738] pl-[40px] pr-[72px] py-[21px] ">
+                    <div className="text-[24px] font-[600] font-Jost text-[#fff] max-w-[158px] w-full   text-left ">
+                      Software Tools Development{" "}
+                    </div>
+                  </div>
+                </div>
+                <div className="">
+                  <img src="/assets/checkout our card-3.svg" alt="" />
+                </div>{" "}
+              </div>
             </SwiperSlide>
             <SwiperSlide>
-              <img src="/assets/checkout our card-1.svg" alt="" />
+              <div className="relative z-10">
+                <div className="absolute bottom-5 left-5 flex flex-col items-start ">
+                  <div className="max-w-[150px] w-full ] px-[37px] py-[5px] bg-gradient-to-r from-[#6D18EF] to-[#186EF2] text-[#fff]">
+                    <button className="max-w-[76px] w-full text-[16px]   font-kumbh ">
+                      Marketing
+                    </button>
+                  </div>
+                  <div className="max-w-[270px] w-full bg-[#292738] pl-[40px] pr-[85px] py-[21px]">
+                    <div className="text-[24px] font-[600] font-Jost text-[#fff] max-w-[149px] w-full text-left ">
+                      Tech Website Solution
+                    </div>
+                  </div>
+                </div>
+                <div className="">
+                  <img src="/assets/checkout our card-1.svg" alt="" />
+                </div>{" "}
+              </div>
             </SwiperSlide>
             <SwiperSlide>
-              {" "}
-              <img src="/assets/checkout our card-2.svg" alt="" />
+              <div className="relative z-10">
+                <div className="absolute bottom-5 left-5 flex flex-col items-start ">
+                  <div className="max-w-[150px] w-full ] px-[37px] py-[5px] bg-gradient-to-r from-[#6D18EF] to-[#186EF2] text-[#fff]">
+                    <button className="max-w-[76px] w-full text-[16px]   font-kumbh ">
+                      Tecnology
+                    </button>
+                  </div>
+                  <div className="max-w-[270px] w-full bg-[#292738] pl-[40px] pr-[85px] py-[21px]">
+                    <div className="text-[24px] font-[600] font-Jost text-[#fff] max-w-[149px] w-full text-left ">
+                      App Platform Integration
+                    </div>
+                  </div>
+                </div>
+                <div className="">
+                  <img src="/assets/checkout our card-2.svg" alt="" />
+                </div>{" "}
+              </div>
             </SwiperSlide>
             <SwiperSlide>
-              <img src="/assets/checkout our card-3.svg" alt="" />
-            </SwiperSlide>{" "}
-            <SwiperSlide>
-              <img src="/assets/checkout our card-1.svg" alt="" />
+              <div className="relative z-10">
+                <div className="absolute bottom-5 left-5 flex flex-col items-start ">
+                  <div className="max-w-[150px] w-full ] px-[37px] py-[5px] bg-gradient-to-r from-[#6D18EF] to-[#186EF2] text-[#fff]">
+                    <button className="max-w-[76px] w-full text-[16px]   font-kumbh ">
+                      Software
+                    </button>
+                  </div>
+                  <div className="max-w-[270px] w-full bg-[#292738] pl-[40px] pr-[72px] py-[21px]">
+                    <div className="text-[24px] font-[600] font-Jost text-[#fff] max-w-[200px] w-full  ">
+                      Software Tools Development{" "}
+                    </div>
+                  </div>
+                </div>
+                <div className="">
+                  <img src="/assets/checkout our card-3.svg" alt="" />
+                </div>{" "}
+              </div>
             </SwiperSlide>
-            <SwiperSlide>
-              {" "}
-              <img src="/assets/checkout our card-2.svg" alt="" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src="/assets/checkout our card-3.svg" alt="" />
-            </SwiperSlide>
-            ...
           </Swiper>
         </div>
       </div>

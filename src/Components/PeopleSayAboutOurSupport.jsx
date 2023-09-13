@@ -45,21 +45,21 @@ function PeopleSayAboutOurSupport() {
         </div>
       </div>
      
-     <div className=" bg-[#000A1F] ml-[10%]   xl:w-[1130px]  absolute">
-      <div className="    ">
+     <div className=" bg-[#000A1F] ml-[12%]   xl:w-[1130px]  relative">
+      <div className=" absolute max-w-[1130px] w-full     ">
         {/* cards */}
         
           {" "}
           <Swiper
-            className="my-swiper  amx-w-[1130px] w-full mx-auto   "
-            // install Swiper modules
+            className="my-swiper  max-w-[1130px] w-full   absolute  "
+            
             modules={[Navigation, Pagination, Scrollbar, A11y]}
             spaceBetween={1}
             slidesPerView={2}
             // navigation
 
             // Other Swiper props
-            pagination={{ bulletClass: "bg-red-500", clickable: true }}
+            pagination={{ clickable: true }}
             // scrollbar={{ draggable: false }}
             onSwiper={(swiper) => console.log(swiper)}
             onSlideChange={() => console.log("slide change")}
@@ -86,9 +86,12 @@ function PeopleSayAboutOurSupport() {
                       text={card.text}
                     />
                   </SwiperSlide>
+               
+                ...
                 </>
               );
             })}
+            
           </Swiper>
         </div>
       </div>
