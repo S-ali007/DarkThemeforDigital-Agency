@@ -98,7 +98,7 @@ function HeroSection({ extraClasses }) {
               <h1>Grow your Business With Us Best Business Solutions</h1>
             </div>
           </div>
-          <div className="text-[#ffffff]  max-w-[718px] w-full  relative z-10 mt-[-40px] pr-[35px] min-h-[718px] h-full">
+          <div className="text-[#ffffff]  max-w-[718px] w-full  relative z-10 mt-[-40px] pr-[35px] min-h-[550px] h-full">
             <img src="/assets/man and a rocket.svg" alt="" ref={(el) => (divRef.current[0] = el)}/>
           </div>
         </div>
