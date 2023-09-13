@@ -7,9 +7,9 @@ function Footer() {
         <div className="flex  max-w-[1114px] w-full  gap-[108px] ">
           {/* logo div */}
           <div className="max-w-[193px] w-full flex flex-col gap-[59px]">
-            <div>
+            <a href="/">
               <img src="/assets/Logo-Lift-2022-B.svg" alt="" />
-            </div>
+            </a>
             <div>
               <div className="text-[22px]  font-Jost leading-[26px] font-[500] text-[#fff]">
                 Follow
