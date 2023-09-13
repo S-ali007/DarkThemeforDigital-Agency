@@ -98,7 +98,7 @@ function LetsSeeOurcompany() {
               <>
                 <div
                   key={id}
-                  className="max-w-[307px] skew-y-[-4deg]  hover:skew-y-[0deg] w-full py-[39px] px-[30px] bg-[#292738] mt-[23px] rounded-[10px]"
+                  className="max-w-[307px] skew-y-[-4deg] group-hover:scale-125 ease-in-out duration-500  hover:skew-y-[0deg] w-full py-[39px] px-[30px] bg-[#292738] mt-[23px] rounded-[10px]"
                 >
                   <div className="max-w-[247px] w-full">
                     <div className="flex flex-col justify-center items-center gap-[20px]">

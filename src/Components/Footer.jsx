@@ -7,7 +7,7 @@ function Footer() {
         <div className="flex  max-w-[1114px] w-full  gap-[108px] ">
           {/* logo div */}
           <div className="max-w-[193px] w-full flex flex-col gap-[59px]">
-            <a href="/">
+            <a href="#home">
               <img src="/assets/Logo-Lift-2022-B.svg" alt="" />
             </a>
             <div>
@@ -147,7 +147,7 @@ function Footer() {
                     <div className="max-w-[107px] w-full ">
                       <input
                         type="text"
-                        className="max-w-[107px] w-full outline-none bg-transparent text-[16px]"
+                        className="max-w-[107px] w-full outline-none bg-transparent text-[16px] text-[#fff] "
                         name=""
                         id=""
                         placeholder="Email Address"
@@ -157,7 +157,7 @@ function Footer() {
                   {/* signup-btn */}
                   <button className=" flex max-w-[80px] w-full gap-[6.52px] items-center ">
                     <div className=" max-w-[67px] w-full text-[16px] font-kumbh  font-[600] text-[#fff]">
-                      Sing Up{" "}
+                      Sign Up{" "}
                     </div>
                     <div className=" max-w-[13px] w-full">
                       <svg
@@ -185,9 +185,9 @@ function Footer() {
             Copy@ 2023 Atsu. All Rights reserved
           </div>
           <div className=" max-w-[271px] w-full flex  text-[16px] font-kumbh leading-[30px] text-[#FFFFFFB2] justify-between">
-            <div className="max-w-[129px] w-full">Setting & Privacy</div>
-            <div className="max-w-[39px] w-full ">Faqs</div>
-            <div className="max-w-[60px] w-full">Contact</div>
+            <a href="/setting"><div className="max-w-[129px] w-full">Setting & Privacy</div></a>
+            <a href="/faq"><div className="max-w-[39px] w-full "> Faqs</div></a> 
+            <a href="#contact"><div className="max-w-[60px] w-full">Contact</div></a>
           </div>
         </div>
       </div>

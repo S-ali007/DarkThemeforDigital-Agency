@@ -55,7 +55,7 @@ function WeAreAwardWinning() {
                 return (
                   <>
                     <div
-                      className="max-w-[199px] w-full flex  bg-[#292738]  rounded-[5px] py-[15px] px-[18px] gap-[10px] justify-center align-middle"
+                      className="max-w-[199px] w-full flex  bg-[#292738]  rounded-[5px] py-[15px] px-[18px] gap-[10px] justify-center align-middle  transition-all duration-500 ease-in hover:cursor-pointer hover:bg-gradient-to-r from-[#6D18EF] to-[#186EF2] text-[#fff] "
                       key={id}
                     >
                       <div className="max-w-[25px] w-full">

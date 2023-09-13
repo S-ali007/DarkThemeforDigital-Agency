@@ -47,7 +47,7 @@ function ReadytoWorktogether() {
               <textarea
                 type="text"
                 className="w-full text-[16px]  text-[#A8ADB3] font-Nunito   outline-none   "
-                placeholder="Your Massage*"
+                placeholder="Your Message*"
               />
             </div>
 

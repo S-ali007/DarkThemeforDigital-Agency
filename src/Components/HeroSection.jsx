@@ -2,9 +2,14 @@
 
 // import Swiper core and required modules
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { gsap } from "gsap";
+import React from "react";
+
+
 
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import TypeWriterComponent from "./TypeWriterComponent"
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
@@ -12,22 +17,56 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import { useRef } from "react";
 
+
+gsap.registerPlugin(ScrollTrigger);
+
 function HeroSection({ extraClasses }) {
+
   const swiperRef = useRef();
+  let animationCompleted = false;
+
+
+  const divRef = React.useRef([]);
+  React.useEffect(() => {
+    const div2 = divRef.current;
+
+    // For multiple div to animate adjusted Version Of The Code
+    div2.forEach((divElement, index) => {
+      gsap.to(divElement, {
+        width: "100%",
+        duration: 5,
+        scrollTrigger: {
+          trigger: divElement,
+          start: "top 60%", // Animation starts when the element is in the middle of the viewport
+          end: "bottom 50%", // Animation ends when the element is in the middle of the viewport
+          scrub: 2,
+          // markers: true,
+          onEnter: () => {
+            if (!animationCompleted) {
+              gsap.set(divElement, { width: "100%", height: "100%" });
+            }
+          },
+          onLeaveBack: () => {
+            animationCompleted = true; // Set animationCompleted to true once the animation leaves the viewport
+          },
+        },
+      });
+    });
+  }, []);
 
   return (
     <div div className="" id="home">
       <div className="flex flex-col justify-center items-center relative pr-[90px] " >
         <div className="flex justify-between mx-auto px-[50px] absolute top-0 max-w-[1422px] w-full ">
-          <div className="pt-[50px]">
-            <img src="/assets/bg-cloud-left.svg" alt="" />
+          <div className="pt-[50px]" ref={(el) => (divRef.current[1] = el)}>
+            <img src="/assets/bg-cloud-left.svg" alt=""  />
           </div>
 
           <div className="pt-[8px] ">
-            <div className="">
+            <div className="" ref={(el) => (divRef.current[2] = el)}>
               <img src="/assets/Image3.svg" alt="" />
             </div>
-            <div className="">
+            <div className="" ref={(el) => (divRef.current[3] = el)}>
               <img
                 className="relative left-[95%] bottom-[4rem]  z-10 m-0"
                 src="/assets/moon.svg"
@@ -43,8 +82,11 @@ function HeroSection({ extraClasses }) {
         <div className="flex gap-[179px] relative  justify-between ">
           <div className="text-[#ffffff] relative   font-Jost mt-[60px] left-[200px] max-w-[720px] w-full ">
             <div className=" tracking-[-0.75px] leading-[75px] flex">
-              <div className=" font-[600] max-w-[500px] w-full  font-Jost  text-clamp">
-                <h1 className="  ">We Provide Smart Business Solutions</h1>
+              <div className=" font-[600] max-w-[500px] w-full  font-Jost  text-clamp  min-h-[258px] h-full ">
+                <h1 className="  ">
+                <TypeWriterComponent
+            text={"We Provide Smart Business Solutions"}
+          /></h1>
               </div>
               <div className="absolute top-[-65px] left-[340px] ">
                 {" "}
@@ -56,8 +98,8 @@ function HeroSection({ extraClasses }) {
               <h1>Grow your Business With Us Best Business Solutions</h1>
             </div>
           </div>
-          <div className="text-[#ffffff]  max-w-[718px] w-full  relative z-10 mt-[-40px] pr-[35px]">
-            <img src="/assets/man and a rocket.svg" alt="" />
+          <div className="text-[#ffffff]  max-w-[718px] w-full  relative z-10 mt-[-40px] pr-[35px] min-h-[718px] h-full">
+            <img src="/assets/man and a rocket.svg" alt="" ref={(el) => (divRef.current[0] = el)}/>
           </div>
         </div>
       </div>

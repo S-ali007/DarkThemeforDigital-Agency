@@ -8,10 +8,10 @@ function ManagebussinessSeo() {
       answer:
         " On the other hand denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment blinded",
       id: 1,
-      open: false,
+      open: true,
     },
     {
-      question: "How We Help Your Projects ? ?",
+      question: "How We Help Your Projects ?",
       answer:
         " On the other hand denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment blinded",
       id: 2,
@@ -28,9 +28,9 @@ function ManagebussinessSeo() {
   const handleClick = (id) => {
     const newArr = faqs.map((item) => {
       if (item.id === id) {
-        return { ...item, open: !item.open };
+        return { ...item, open: true };
       } else {
-        return item;
+        return { ...item, open: false };
       }
     });
 
@@ -72,7 +72,7 @@ function ManagebussinessSeo() {
                         onClick={() => {
                           handleClick(faq.id);
                         }}
-                        className="max-w-[440px] w-full ml-[65px] mt-[10px] flex justify-center gap-[91px] bg-[#292738] border-b-[#2E2D2D] align-middle  pt-[17px] pr-[15.8px] pb-[18px] pl-[8px]"
+                        className="max-w-[440px] w-full ml-[65px] mt-[10px] flex justify-center gap-[91px] bg-[#292738] border-b-[#2E2D2D] align-middle  pt-[17px] pr-[15.8px] pb-[18px] pl-[8px] hover:cursor-pointer"
                       >
                         <div className="max-w-[309px] w-full font-Jost text-[#fff] text-[18px] font-[600]  ">
                           {faq.question}
@@ -112,9 +112,7 @@ function ManagebussinessSeo() {
           </div>
           {/* right-logo */}
           <div className="max-w-[701px] w-full ">
-          
             <img src="/assets/managebussinessSeo-right-logo.svg" alt="" />
-            
           </div>
         </div>
       </div>
