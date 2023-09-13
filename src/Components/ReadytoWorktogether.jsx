@@ -2,7 +2,7 @@ import React from "react";
 
 function ReadytoWorktogether() {
   return (
-    <div className="bg-[#000A1F] max-w-[1920px] w-full  mx-auto   pl-[321px] pr-[404px] pb-[168px]" id="contact" >
+    <div className="bg-[#000A1F] max-w-[1920px] w-full flex justify-center mx-auto  " id="contact" >
       {/* main-div */}
       <div className="flex items-center max-w-[1194px] w-full   justify-between " >
         {/* img-left */}
@@ -18,7 +18,7 @@ function ReadytoWorktogether() {
           </div>
 
           <div className="max-w-[399px] w-full relative flex flex-col   ">
-                <div className="relative top-[89px]  justify-center  flex  max-w-[84px] w-full left-[50px]">
+                <div className="relative top-[89px]  justify-center  flex  w-full left-[50px]">
                   <img className="" src="/assets/pseudo.svg" alt="" />
                 </div>
                 <div className="font-[700]    text-[150px] text-[#FFFFFF26]  cursor-pointer font-Jost uppercase flex justify-center items-center">
