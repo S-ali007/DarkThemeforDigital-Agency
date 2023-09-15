@@ -38,6 +38,7 @@ function HeroSection({ extraClasses }) {
       //     tl.progress(self.progress);
       //   },
       // },
+      paused:true,
     });
 
     tl.to(".scroll-trigger-element1", {
@@ -57,6 +58,10 @@ function HeroSection({ extraClasses }) {
       width: "100%",
       height: "100%",
     });
+    tl.to(".scroll-trigger-element5", {
+      width: "100%",
+      height: "100%",
+    });
     
     const lottieTrigger = ScrollTrigger.create({
 
@@ -65,16 +70,18 @@ function HeroSection({ extraClasses }) {
         console.log(self.progress);
         tl.progress(self.progress)
       },
+      duration:5,
       preventOverlaps: true,
       refreshPriority: 0,
       scrub: 2,
       start: 'top',
-      end: '+=3000',
-      // pin: true,
+      end: '+=1000',
+      pin: true,
       // marker: true,
-      // pinType: 'fixed',
+      pinType: 'fixed',
       onEnter: () => {
       },
+      
     });
 
     return () => {
@@ -116,9 +123,9 @@ function HeroSection({ extraClasses }) {
   // }, []);
 
   return (
-    <div div className="" id="home">
-      <div className=" flex flex-col justify-center items-center relative pr-[90px] min-h-[]">
-        <div className="trigger flex justify-between mx-auto px-[50px] absolute top-0 max-w-[1422px] w-full ">
+    <div div className="trigger " id="home">
+      <div className=" flex flex-col justify-center items-center relative pr-[90px] ">
+        <div className=" flex justify-between mx-auto px-[50px] absolute top-0 max-w-[1422px] w-full ">
           <div className="pt-[50px] scroll-trigger-element2 w-0">
             <img src="/assets/bg-cloud-left.svg" alt="" />
           </div>
@@ -136,21 +143,21 @@ function HeroSection({ extraClasses }) {
             </div>
           </div>
         </div>
-        <div className="relative top-[309px] left-[50px]  ">
+        <div className="relative top-[309px] left-[50px] ">
           <img src="/assets/bg-cloud-left.svg " alt="" />
         </div>
 
-        <div className="flex gap-[179px] relative  justify-between  trigger">
+        <div className="flex gap-[179px] relative  justify-between  trigger max-w-[1294px] w-full">
           <div className="text-[#ffffff] relative   font-Jost mt-[60px] left-[200px] max-w-[720px] w-full ">
             <div className=" tracking-[-0.75px] leading-[75px] flex">
-              <div className=" font-[600] max-w-[500px] w-full  font-Jost  text-clamp  min-h-[258px] h-full ">
+              <div className=" font-[600] max-w-[500px] w-full  font-Jost  text-clamp  min-h-[258px] h-full  ">
                 <h1 className="">
                   <TypeWriterComponent
                     text={"We Provide Smart Business Solutions"}
                   />
                 </h1>
               </div>
-              <div className="absolute top-[-65px] left-[340px] ">
+              <div className="absolute top-[-65px] left-[340px] scroll-trigger-element5 w-0">
                 {" "}
                 <img src="/assets/bulb.svg" alt="" />
               </div>
@@ -164,7 +171,7 @@ function HeroSection({ extraClasses }) {
             <img
               src="/assets/man and a rocket.svg"
               alt=""
-              className="max-w-[718px] w-0 min-h-[550px] h-full scroll-trigger-element4 z-10"
+              className="max-w-[718px] w-0  h-full scroll-trigger-element4 z-10"
             />
           </div>
         </div>
