@@ -1,5 +1,5 @@
 import React from "react";
-import { useState , useEffect } from "react";
+import { useState, useEffect } from "react";
 import TypeWriterComponent from "./TypeWriterComponent";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { gsap } from "gsap";
@@ -34,14 +34,9 @@ function ExploreOurPersonal() {
 
   gsap.registerPlugin(ScrollTrigger);
 
-
-  
-
   useEffect(() => {
-
     const tl = gsap.timeline({
- 
-      paused:true,
+      paused: true,
     });
 
     tl.to(".scroll-trigger-1", {
@@ -51,64 +46,83 @@ function ExploreOurPersonal() {
     tl.to(".scroll-trigger-2", {
       width: "100%",
       height: "100%",
-     
+    });
+    tl.to(".scroll-trigger-3", {
+      width: "100%",
+      height: "100%",
+    });
+    tl.to(".scroll-trigger-4", {
+      width: "100%",
+      height: "100%",
     });
 
-    
-    const lottieTrigger = ScrollTrigger.create({
 
-      trigger: '.triggersec',
+    const lottieTrigger = ScrollTrigger.create({
+      trigger: ".triggersec",
       onUpdate: (self) => {
         console.log(self.progress);
-        tl.progress(self.progress)
+        tl.progress(self.progress);
       },
-      duration:5,
+      duration: 5,
       preventOverlaps: true,
       refreshPriority: 0,
       scrub: 2,
-      start: 'top',
+      start: "top",
       pin: true,
       marker: true,
-      pinType: 'fixed',
-      onEnter: () => {
-      },
-      
+      pinType: "fixed",
+      onEnter: () => {},
     });
 
     return () => {
       lottieTrigger.kill();
     };
-
   }, []);
   return (
     <div className="bg-[#000A1F] max-w-[1920px] w-full  mx-auto pt-[117px]  ">
-      <div className="triggersec flex  items-center   max-w-[1430px] w-full mx-auto gap-[16px]   ">
+      <div className="triggersec  max-w-[1430px] w-full flex  items-center   mx-auto gap-[16px]   ">
         {/* Icons-And-Img-left */}
-        <div className="flex justify-center items-center gap-[21px] ">
-          <div className="min-h-[471px] h-full max-w-[120px] w-full">
-            <img src="/assets/explore_our-sideImg.svg" alt="" className="max-w-[120px] w-0  h-full scroll-trigger-1"/>
+        <div className="flex justify-center items-center gap-[21px] max-w-[503px] w-full ">
+          <div className="min-h-[471px] h-full max-w-[120px] w-full flex flex-col justify-between">
+            <div className="max-w-[120px] w-0  h-full scroll-trigger-2">
+              <img src="/assets/Slice 1 YOUTUBE.svg" alt="" />
+            </div>
+            <div className="max-w-[120px] w-0  h-full scroll-trigger-3">
+              {" "}
+              <img src="/assets/Slice 1 FB.svg" alt="" />
+            </div>
+            <div className="max-w-[120px] w-0  h-full scroll-trigger-4">
+              {" "}
+              <img src="/assets/Slice 1 PLANT.svg" alt="" />
+            </div>
           </div>
           <div className="min-h-[576px] h-full max-w-[362px] w-full">
-            <img src="/assets/explore_our-centerImg.svg" alt="" className="max-w-[362px] w-0  h-full scroll-trigger-1" />
+            <img
+              src="/assets/explore_our-centerImg.svg"
+              alt=""
+              className="max-w-[362px] w-0  h-full scroll-trigger-1"
+            />
           </div>
         </div>
         {/* Right-Logo */}
         <div className="flex flex-col gap-[72px] justify-start mt-[35px] max-w-[786px] w-full">
           <div className="max-w-[507px] w-full text-[42px] font-Jost absolute ml-[38px] pt-[65px] font-[600] leading-[53px] text-[white]  mt-[57px]  ">
-           <p className="min-h-[114px] h-full"> <TypeWriterComponent
-                    text={"Explore Our Professional Business Solutions"}
-                  /></p>
+            <p className="min-h-[114px] h-full">
+              {" "}
+              <TypeWriterComponent
+                text={"Explore Our Professional Business Solutions"}
+              />
+            </p>
           </div>
 
           <div className="max-w-[772px]  w-full relative  ">
             <div className="relative top-[93px]  left-10  max-w-[84px] w-full">
               <img className="" src="/assets/pseudo.svg" alt="" />
             </div>
-            
+
             <div className="max-w-[772px] w-full relative font-[900]  text-transparent border-[#FFFFFF26] text-[150px] font-outline-2 hover:font-outline-4   font-kumbh uppercase ">
-            features
+              features
             </div>
-           
           </div>
 
           {/* bussiness Growth,user Research ,big data  options */}
