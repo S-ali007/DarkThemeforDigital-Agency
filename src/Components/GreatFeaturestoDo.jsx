@@ -1,5 +1,7 @@
 import React from "react";
 import { useState } from "react";
+import TypeWriterComponent from "./TypeWriterComponent";
+
 
 function GreatFeaturestoDo() {
   const [features, setfeatures] = useState([
@@ -31,7 +33,10 @@ function GreatFeaturestoDo() {
       <div className=" max-w-[1305px] w-full mx-auto">
         <div className="flex  items-center    pr-[20px] justify-center ">
           <div className="max-w-[690px] w-full text-[42px] font-Jost absolute  font-[600] leading-[53px] text-[white]  pt-[83px] mt-[14px] align-middle justify-center text-center  ">
-            <p>Great Features To Do Your Buisness Growth & Development</p>
+            <h1 className=" min-h-[114px] h-full">
+            <TypeWriterComponent
+                    text={"Great Features To Do Your Buisness Growth & Development"}
+                  /></h1>
           </div>
 
           <div className="max-w-[732px] w-full relative flex flex-col  items-center ">
@@ -56,7 +61,7 @@ function GreatFeaturestoDo() {
           {/* right side */}
           <div className="flex   flex-col gap-[30px] items-center" >
             {/* item-1-graphic design */}
-            <div className="max-w-[470px] w-full flex  gap-[25px]  bg-[#292738]   rounded-[8px] pt-[25px] pb-[23px] px-[30px]  justify-center align-middle">
+            <div className="max-w-[470px] w-full flex  gap-[25px]  bg-[#292738] group-hover:transform transition-transform cursor-pointer   hover:translate-x-20    rounded-[8px] pt-[25px] pb-[23px] px-[30px]  justify-center align-middle">
               <div className="max-w-[70px] w-full">
                 <img
                   src="/assets/Great work Graphic design item 1.svg"
@@ -92,7 +97,7 @@ function GreatFeaturestoDo() {
               {/* ------- */}
             </div>
              {/* item-2-graphic design */}
-             <div className="max-w-[470px] relative left-[61px]  w-full flex  gap-[25px]  bg-[#292738]   rounded-[8px] pt-[25px] pb-[23px] px-[30px]  justify-center align-middle">
+             <div className="max-w-[470px] relative group-hover:transform transition-transform cursor-pointer  hover:translate-x-20 w-full flex  gap-[25px]  bg-[#292738]   rounded-[8px] pt-[25px] pb-[23px] px-[30px]  justify-center align-middle">
               <div className="max-w-[70px] w-full">
                 <img
                   src="/assets/Great work Graphic design item 2.svg"
@@ -128,7 +133,7 @@ function GreatFeaturestoDo() {
               {/* ------- */}
             </div>
              {/* item-3-graphic design */}
-             <div className="max-w-[470px] relative left-[108px] w-full flex  gap-[25px]  bg-[#292738]   rounded-[8px] pt-[25px] pb-[23px] px-[30px]  justify-center align-middle">
+             <div className="max-w-[470px] relative   w-full flex  gap-[25px] group-hover:transform transition-transform cursor-pointer  hover:translate-x-[130px] bg-[#292738]   rounded-[8px] pt-[25px] pb-[23px] px-[30px]  justify-center align-middle">
               <div className="max-w-[70px] w-full">
                 <img
                   src="/assets/Great work Graphic design item 3.svg"
@@ -164,7 +169,7 @@ function GreatFeaturestoDo() {
               {/* ------- */}
             </div>
              {/* item-4-graphic design */}
-             <div className="max-w-[470px] relative left-[-28px] w-full flex  gap-[25px]  bg-[#292738]   rounded-[8px] pt-[25px] pb-[23px] px-[30px]  justify-center align-middle">
+             <div className="max-w-[470px] relative  hover:translate-x-[-38px] group-hover:transform transition-transform cursor-pointer w-full flex  gap-[25px]  bg-[#292738]   rounded-[8px] pt-[25px] pb-[23px] px-[30px]  justify-center align-middle">
               <div className="max-w-[70px] w-full">
                 <img
                   src="/assets/Great work Graphic design item 4.svg"
@@ -200,7 +205,7 @@ function GreatFeaturestoDo() {
               {/* ------- */}
             </div>
              {/* item-5-graphic design */}
-             <div className="max-w-[470px]  relative left-[-201px] w-full flex  gap-[25px]  bg-[#292738]   rounded-[8px] pt-[25px] pb-[23px] px-[30px]  justify-center align-middle">
+             <div className="max-w-[470px]  relative   group-hover:transform transition-transform cursor-pointer  hover:translate-x-[-201px] w-full flex  gap-[25px]  bg-[#292738]   rounded-[8px] pt-[25px] pb-[23px] px-[30px]  justify-center align-middle">
               <div className="max-w-[70px] w-full">
                 <img
                   src="/assets/Great work Graphic design item 5.svg"

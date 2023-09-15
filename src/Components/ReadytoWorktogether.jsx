@@ -1,4 +1,5 @@
 import React from "react";
+import TypeWriterComponent from "./TypeWriterComponent";
 
 function ReadytoWorktogether() {
   return (
@@ -14,7 +15,8 @@ function ReadytoWorktogether() {
         {/* heading-logo-div */}
         <div className="max-w-[490px] w-full">
           <div className="max-w-[470px] w-full text-[42px] font-Jost absolute ml-[50px] mt-[120px] font-[600] leading-[53px] text-[white] ">
-            Ready to Work Together In News Projects ?
+          <p className="min-h-[114px] h-full"><TypeWriterComponent
+                    text={"Ready to Work Together In News Projects ?"}/></p> 
           </div>
 
           <div className="max-w-[399px] w-full relative flex flex-col   ">
@@ -30,7 +32,7 @@ function ReadytoWorktogether() {
             <div className="max-w-[485px] w-full pl-[16px]   py-[16px] bg-[#FAFAFA] rounded-[4px]  ">
               <input
                 type="text"
-                className="w-full text-[16px]  text-[#A8ADB3] font-Nunito   outline-none  "
+                className="w-full text-[16px]  text-[#A8ADB3] font-Nunito   outline-none  bg-[#FAFAFA]"
                 placeholder="Your Name*"
               />
             </div>
@@ -38,7 +40,7 @@ function ReadytoWorktogether() {
             <div className="max-w-[485px] w-full pl-[16px]   py-[16px] bg-[#FAFAFA] rounded-[4px] ">
               <input
                 type="text"
-                className="w-full text-[16px]  text-[#A8ADB3] font-Nunito   outline-none   "
+                className="w-full text-[16px]  text-[#A8ADB3] font-Nunito   outline-none  bg-[#FAFAFA] "
                 placeholder="Your Email*"
               />
             </div>
@@ -46,12 +48,12 @@ function ReadytoWorktogether() {
             <div className="max-w-[485px] w-full pl-[16px]   pt-[16px] pb-[82px] bg-[#FAFAFA] rounded-[4px] ">
               <textarea
                 type="text"
-                className="w-full text-[16px]  text-[#A8ADB3] font-Nunito   outline-none   "
+                className="w-full text-[16px]  text-[#A8ADB3] font-Nunito   outline-none  bg-[#FAFAFA] "
                 placeholder="Your Message*"
               />
             </div>
 
-            <button className="max-w-[180px]  rounded-[4px] items-center flex justify-center h-[54px] bg-gradient-to-r from-[#6D18EF] to-[#186EF2]  w-full px-[33px]    ">
+            <button className="max-w-[180px]  rounded-[4px] items-center flex justify-center h-[54px] bg-gradient-to-r from-[#6D18EF] to-[#186EF2]  w-full px-[33px] cursor-pointer ">
           <div className="max-w-[113px] w-full  font-Nunito text-[17px] font-[600]   text-[#FFF] text-center">Send Message</div>
           </button>
           </div>

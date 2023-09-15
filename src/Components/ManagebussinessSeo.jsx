@@ -1,7 +1,56 @@
 import React, { useState } from "react";
-
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { gsap } from "gsap";
+import TypeWriterComponent from "./TypeWriterComponent";
+import { useRef, useEffect } from "react";
 function ManagebussinessSeo() {
-  const [show, setShow] = useState(false);
+  
+
+gsap.registerPlugin(ScrollTrigger);
+
+
+  
+
+  useEffect(() => {
+
+    const tl = gsap.timeline({
+ 
+      paused:true,
+    });
+
+    tl.to(".scroll-trigger-element1", {
+      width: "100%",
+      height: "100%",
+    });
+
+    
+    const lottieTrigger = ScrollTrigger.create({
+
+      trigger: '.sec2',
+      onUpdate: (self) => {
+        console.log(self.progress);
+        tl.progress(self.progress)
+      },
+      duration:5,
+      preventOverlaps: true,
+      refreshPriority: 0,
+      scrub: 2,
+      start: 'top',
+      end: '+=500',
+      
+      pin: true,
+      marker: true,
+      pinType: 'fixed',
+      onEnter: () => {
+      },
+      
+    });
+
+    return () => {
+      lottieTrigger.kill();
+    };
+
+  }, []);
   const [faqs, setfaqs] = useState([
     {
       question: "Why SEO Growth Business Strategy ?",
@@ -38,14 +87,16 @@ function ManagebussinessSeo() {
   };
 
   return (
-    <div className="bg-[#000A1F] max-w-[1920px] w-full  mx-auto pt-[128px]">
-      <div className="max-w-[1500px] w-full  mx-auto pl-[30px] pt-[50px]">
+    <div className=" bg-[#000A1F] max-w-[1920px] w-full  mx-auto pt-[128px] ">
+      <div className="sec2 max-w-[1500px] w-full  mx-auto pl-[30px] pt-[50px]">
         <div className="flex   justify-end pb-[56px] gap-[108px]">
           <div className="">
             {/* main-heading-Manage-bussiness-seo */}
             <div>
               <div className="max-w-[432px] w-full text-[42px] font-Jost absolute ml-[38px] mt-[119px] font-[600] leading-[53px] text-[white] ">
-                Manage Business SEO Optimization Easily{" "}
+              <TypeWriterComponent
+                    text={"Manage Business SEO Optimization Easily"}/>
+                 
               </div>
 
               <div className="max-w-[307px] w-full relative flex flex-col   ">
@@ -111,8 +162,8 @@ function ManagebussinessSeo() {
             </div>
           </div>
           {/* right-logo */}
-          <div className="max-w-[701px] w-full ">
-            <img src="/assets/managebussinessSeo-right-logo.svg" alt="" />
+          <div className=" min-h-[572px] h-full max-w-[701px] w-full">
+            <img src="/assets/managebussinessSeo-right-logo.svg" alt="" className="max-w-[701px] w-0  h-full scroll-trigger-element1 "   />
           </div>
         </div>
       </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
-
+import TypeWriterComponent from "./TypeWriterComponent";
 import { Swiper, SwiperSlide } from "swiper/react";
 import PeopleSayAboutCards from "./PeopleSayAboutCards";
 
@@ -31,7 +31,11 @@ function PeopleSayAboutOurSupport() {
       <div className="   relative z-10">
         <div className="flex  items-center    pr-[20px] justify-center ">
           <div className="max-w-[461px] w-full text-[42px] tracking-[0.42px] font-Jost absolute  font-[600] leading-[53px] text-[white]  pt-[83px] mt-[10px] align-middle justify-center text-center ">
-            <p>People’s Say About Our Support & Services</p>
+            <p className="min-h-[114px] h-full">
+              <TypeWriterComponent
+                text={"People’s Say About Our Support & Services"}
+              />
+            </p>
           </div>
 
           <div className="max-w-[732px] w-full relative flex flex-col  items-center ">
@@ -44,15 +48,12 @@ function PeopleSayAboutOurSupport() {
           </div>
         </div>
       </div>
-     
-     <div className=" bg-[#000A1F] ml-[12%]   xl:w-[1130px]  relative">
-      <div className=" absolute max-w-[1130px] w-full     ">
-        {/* cards */}
-        
-          {" "}
+
+      <div className=" bg-[#000A1F] ml-[12%]   xl:w-[1130px]  relative">
+        <div className=" absolute max-w-[1130px] w-full     ">
+          {/* cards */}{" "}
           <Swiper
-            className="my-swiper  max-w-[1130px] w-full   absolute  "
-            
+            className="my-swiper  max-w-[1130px] w-full   absolute   cursor-pointer "
             modules={[Navigation, Pagination, Scrollbar, A11y]}
             spaceBetween={1}
             slidesPerView={2}
@@ -64,7 +65,6 @@ function PeopleSayAboutOurSupport() {
             onSwiper={(swiper) => console.log(swiper)}
             onSlideChange={() => console.log("slide change")}
           >
-          
             {cards.map((card, id) => {
               return (
                 <>
@@ -77,7 +77,7 @@ function PeopleSayAboutOurSupport() {
                       text={card.text}
                     />
                   </SwiperSlide>
-                   <SwiperSlide>
+                  <SwiperSlide>
                     <PeopleSayAboutCards
                       designation={card.designation}
                       img={card.img}
@@ -86,16 +86,14 @@ function PeopleSayAboutOurSupport() {
                       text={card.text}
                     />
                   </SwiperSlide>
-               
-                ...
+                  ...
                 </>
               );
             })}
-            
           </Swiper>
         </div>
       </div>
-      
+
       <div className="flex   justify-between relative mt-[-250px]">
         {/* left-bg img */}
         <div className=" relative   ">

@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import TypeWriterComponent from "./TypeWriterComponent";
 
 function WeAreAwardWinning() {
   const [items, setitems] = useState([
@@ -26,8 +27,12 @@ function WeAreAwardWinning() {
         <div className="pb-[43px]">
           {/* logo for we are award winning */}
           <div>
-            <div className="max-w-[530px] w-full text-[42px] font-Jost absolute ml-[38px] mt-[119px] font-[600] leading-[53px] text-[white] tracking-[0.42px]">
-              We’re Awards Winning Modern Business Solutions Agency
+            <div className="max-w-[530px] w-full text-[42px] font-Jost absolute ml-[38px] mt-[119px] font-[600] leading-[53px] text-[white] tracking-[0.42px]  ">
+              <p className="max-h-[167px] h-full">
+                <TypeWriterComponent
+                  text={"We’re Awards Winning Modern Business Solutions Agency"}
+                />
+              </p>
             </div>
 
             <div className="max-w-[401px] w-full relative flex flex-col   ">

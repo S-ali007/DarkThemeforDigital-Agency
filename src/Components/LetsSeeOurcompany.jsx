@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import TypeWriterComponent from "./TypeWriterComponent";
 
 function LetsSeeOurcompany() {
   const [cards, setCards] = useState([
@@ -32,7 +33,8 @@ function LetsSeeOurcompany() {
             {/* heading-logo-div */}
             <div>
               <div className="max-w-[447px] w-full text-[42px] font-Jost absolute ml-[39px] mt-[120px] font-[600] leading-[53px] text-[white] ">
-                Let’s See Our Company Achievement{" "}
+                <TypeWriterComponent
+                    text={"Let’s See Our Company Achievement"}/>
               </div>
 
               <div className="max-w-[363px] w-full relative flex flex-col   ">

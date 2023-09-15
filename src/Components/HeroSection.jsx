@@ -76,6 +76,7 @@ function HeroSection({ extraClasses }) {
       scrub: 2,
       start: 'top',
       end: '+=1000',
+      
       pin: true,
       // marker: true,
       pinType: 'fixed',
@@ -123,7 +124,7 @@ function HeroSection({ extraClasses }) {
   // }, []);
 
   return (
-    <div div className="trigger " id="home">
+    <div div className="trigger  " id="home">
       <div className=" flex flex-col justify-center items-center relative pr-[90px] ">
         <div className=" flex justify-between mx-auto px-[50px] absolute top-0 max-w-[1422px] w-full ">
           <div className="pt-[50px] scroll-trigger-element2 w-0">
@@ -198,7 +199,9 @@ function HeroSection({ extraClasses }) {
               <div className="flex   justify-between max-w-[1170px] w-full  ">
                 <div>
                   <div className="max-w-[465.53px] w-full text-[42px] font-Jost absolute ml-[40px] mt-[49px] font-[600] leading-[53px] text-[white] tracking-[0.42px]">
-                    We’ve More Then 254+ Global Partners
+                  <TypeWriterComponent
+                    text={"We’ve More Then 254+ Global Partners"}
+                  />
                   </div>
 
                   <div className="relative bottom-[-19px]  left-10  max-w-[84px] w-full">
@@ -225,7 +228,7 @@ function HeroSection({ extraClasses }) {
                   <img src="assets/Button-logo-Brand.svg" alt="" />
                 </button>
                 <Swiper
-                  className="my-swiper"
+                  className="my-swiper   cursor-pointer"
                   // install Swiper modules
                   modules={[Navigation]}
                   onBeforeInit={(swiper) => {

@@ -9,6 +9,8 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import TypeWriterComponent from "./TypeWriterComponent";
+
 
 function CheckOutOurRecentProject() {
   const paginationStyle = {
@@ -24,7 +26,8 @@ function CheckOutOurRecentProject() {
       <div className=" max-w-[1364px] w-full mx-auto">
         <div className="flex  items-center    pr-[20px] justify-center ">
           <div className="max-w-[437px] w-full text-[42px] tracking-[0.42px] font-Jost absolute  font-[600] leading-[53px] text-[white]  pt-[83px] mt-[10px] align-middle justify-center text-center ">
-            <p>Checkout our Recently Completed Projects</p>
+            <p className="min-h-[114px] h-full"> <TypeWriterComponent
+                    text={"Checkout our Recently Completed Projects"}/></p>
           </div>
           <div className="max-w-[732px] w-full relative flex flex-col  items-center ">
             <div className="relative top-[89px]  justify-center  flex  max-w-[84px] w-full ">
