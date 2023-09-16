@@ -1,13 +1,34 @@
 import React from "react";
 import TypeWriterComponent from "./TypeWriterComponent";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { gsap } from "gsap";
 
 function ReadytoWorktogether() {
+  
+  
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".container",
+      // markers:true,
+      start: "center 70%",
+      end:"top 10%",
+      toggleActions: "restart none none reset"
+    }
+  });
+
+  tl.set('.container', { autoAlpha: 1 });
+  tl.from('.image1', {
+    xPercent: -200,
+    ease: "power2"
+  });
+
+
   return (
-    <div className="bg-[#000A1F] max-w-[1920px] w-full flex justify-center mx-auto  " id="contact" >
+    <div className="container bg-[#000A1F] max-w-[1920px] w-full flex justify-center mx-auto  " id="contact" >
       {/* main-div */}
-      <div className="flex items-center max-w-[1194px] w-full   justify-between " >
+      <div className="flex items-center max-w-[1194px] w-full   justify-between  " >
         {/* img-left */}
-        <div className="flex max-w-[540px] w-full mt-[90px] ">
+        <div className="flex max-w-[540px] w-full mt-[90px] image1">
           <div className=" w-full "><img src="/assets/readyto work -Home5-12-7.svg" alt="" /></div>
         </div>
         {/* right-content */}

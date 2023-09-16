@@ -114,7 +114,7 @@ function Footer() {
                 <a href="/" className="max-w-[126.64px] w-full text-[16px]  font-kumbh text-[#FFF] leading-[26px] group-hover: border-sky-600  hover:border-b">
                   Custome Service
                 </a>
-                <a href="" className="max-w-[128px] w-full text-[16px]  font-kumbh text-[#FFF] leading-[26px] group-hover: border-sky-600  hover:border-b">
+                <a href="/" className="max-w-[128px] w-full text-[16px]  font-kumbh text-[#FFF] leading-[26px] group-hover: border-sky-600  hover:border-b">
                   +000 (123) 456 88
                 </a>
               </div>

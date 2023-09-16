@@ -3,7 +3,7 @@ import React from "react";
 function Header({ extraClasses }) {
   return (
     <div
-      className={`header z-10   flex justify-center items-center gap-[147px] pt-[64px] pb-[7px]  ${extraClasses} mx-auto`}
+      className={` header z-10   flex justify-center items-center gap-[147px] pt-[64px] pb-[7px]  ${extraClasses} mx-auto`}
     >
       {/* navbar-logo */}
       <div>
