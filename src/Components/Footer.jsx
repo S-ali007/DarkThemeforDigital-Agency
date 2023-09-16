@@ -81,22 +81,22 @@ function Footer() {
               <div className="max-w-[83px] w-full text-[22px]  font-Jost font-[500] leading-[26px] text-[#FFF]">
                 Services
               </div>
-              <div className="flex flex-col gap-[20px]">
-                <div className="max-w-[115px] w-full text-[16px]  font-kumbh text-[#FFF] leading-[26px]">
-                  Product Design
-                </div>
-                <div className="max-w-[146.75px] w-full text-[16px]  font-kumbh text-[#FFF] leading-[26px]">
+              <div className="flex flex-col gap-[20px] ">
+                <a href="/" className="max-w-[115px] w-full text-[16px]  font-kumbh text-[#fff] leading-[26px] group-hover: border-sky-600  hover:border-b">
+                 Product Design
+                </a>
+                <a href="/" className="max-w-[146.75px] w-full text-[16px]  font-kumbh text-[#FFF] leading-[26px] group-hover: border-sky-600  hover:border-b">
                   Business Consulting
-                </div>
-                <div className="max-w-[126.64px] w-full text-[16px]  font-kumbh text-[#FFF] leading-[26px]">
+                </a>
+                <a href="/" className="max-w-[126.64px] w-full text-[16px]  font-kumbh text-[#FFF] leading-[26px] group-hover: border-sky-600  hover:border-b">
                   Custome Service
-                </div>
-                <div className="max-w-[105.84px] w-full text-[16px]  font-kumbh text-[#FFF] leading-[26px]">
+                </a>
+                <a href="/" className="max-w-[105.84px] w-full text-[16px]  font-kumbh text-[#FFF] leading-[26px] group-hover: border-sky-600  hover:border-b">
                   Brand Identity
-                </div>
-                <div className="max-w-[133.11px] w-full text-[16px]  font-kumbh text-[#FFF] leading-[26px]">
+                </a>
+                <a href="/" className="max-w-[133.11px] w-full text-[16px]  font-kumbh text-[#FFF] leading-[26px] group-hover: border-sky-600  hover:border-b">
                   SEO Optimization
-                </div>
+                </a>
               </div>
             </div>
             {/* Contact */}
@@ -105,18 +105,18 @@ function Footer() {
                 Contact
               </div>
               <div className="flex flex-col gap-[20px]">
-                <div className="max-w-[197.95px] w-full text-[16px]  font-kumbh text-[#FFF] leading-[26px]">
+                <a href="/" className="max-w-[197.95px] w-full text-[16px]  font-kumbh text-[#FFF] leading-[26px] group-hover: border-sky-600  hover:border-b">
                   785 Main Street, 2nd Block melbourne, australia
-                </div>
-                <div className="max-w-[149.75px] w-full text-[16px]  font-kumbh text-[#FFF] leading-[26px]">
+                </a>
+                <a href="/" className="max-w-[149.75px] w-full text-[16px]  font-kumbh text-[#FFF] leading-[26px] group-hover: border-sky-600  hover:border-b">
                   support@gmail.com
-                </div>
-                <div className="max-w-[126.64px] w-full text-[16px]  font-kumbh text-[#FFF] leading-[26px]">
+                </a>
+                <a href="/" className="max-w-[126.64px] w-full text-[16px]  font-kumbh text-[#FFF] leading-[26px] group-hover: border-sky-600  hover:border-b">
                   Custome Service
-                </div>
-                <div className="max-w-[128px] w-full text-[16px]  font-kumbh text-[#FFF] leading-[26px]">
+                </a>
+                <a href="" className="max-w-[128px] w-full text-[16px]  font-kumbh text-[#FFF] leading-[26px] group-hover: border-sky-600  hover:border-b">
                   +000 (123) 456 88
-                </div>
+                </a>
               </div>
             </div>
             {/* News-Letter */}
@@ -125,9 +125,9 @@ function Footer() {
                 Newsletter
               </div>
               <div className="flex flex-col gap-[20px]">
-                <div className="max-w-[287.78px] w-full text-[24px]  font-Jost font-[500] leading-[35px] text-[#FFF]">
+                <a href="/" className="max-w-[287.78px] w-full text-[24px]  font-Jost font-[500] leading-[35px] text-[#FFF]    ">
                   Get Every Single Update to Join Our Newsletter
-                </div>
+                </a>
                 <div className="max-w-[304px] w-full flex   justify-between    pt-[19px] pb-[20px] border-b-[1px] ">
                   <div className="flex gap-[11.8px] items-center">
                     <div>

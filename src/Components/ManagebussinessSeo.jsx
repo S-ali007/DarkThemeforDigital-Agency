@@ -88,7 +88,7 @@ gsap.registerPlugin(ScrollTrigger);
 
   return (
     <div className=" bg-[#000A1F] max-w-[1920px] w-full  mx-auto pt-[128px] ">
-      <div className="sec2 max-w-[1500px] w-full  mx-auto pl-[30px] pt-[50px]">
+      <div className=" max-w-[1500px] w-full  mx-auto pl-[30px] pt-[50px]">
         <div className="flex   justify-end pb-[56px] gap-[108px]">
           <div className="">
             {/* main-heading-Manage-bussiness-seo */}
@@ -162,8 +162,8 @@ gsap.registerPlugin(ScrollTrigger);
             </div>
           </div>
           {/* right-logo */}
-          <div className=" min-h-[572px] h-full max-w-[701px] w-full">
-            <img src="/assets/managebussinessSeo-right-logo.svg" alt="" className="max-w-[701px] w-0  h-full scroll-trigger-element1 "   />
+          <div className="  max-w-[701px] w-full">
+            <img src="/assets/managebussinessSeo-right-logo.svg" alt="" className="max-w-[701px]  "   />
           </div>
         </div>
       </div>

@@ -42,7 +42,7 @@ function CheckOutOurRecentProject() {
         {/* Cards-div */}
         <div className=" mt-[70px] mx-auto  max-w-[1170px] w-full">
           <Swiper
-            className="my-swiper"
+            className="my-swiper  cursor-pointer"
             // install Swiper modules
             modules={[Navigation, Pagination, Scrollbar, A11y]}
             spaceBetween={50}

@@ -83,16 +83,16 @@ function ExploreOurPersonal() {
         {/* Icons-And-Img-left */}
         <div className="flex justify-center items-center gap-[21px] max-w-[503px] w-full ">
           <div className="min-h-[471px] h-full max-w-[120px] w-full flex flex-col justify-between">
-            <div className="max-w-[120px] w-0  h-full scroll-trigger-2">
-              <img src="/assets/Slice 1 YOUTUBE.svg" alt="" />
+            <div className="max-w-[120px] w-0  h-full scroll-trigger-2 ">
+              <img src="/assets/Slice 1 YOUTUBE.svg" alt=""  className="animate-floating"/>
             </div>
-            <div className="max-w-[120px] w-0  h-full scroll-trigger-3">
+            <div className="max-w-[120px] w-0  h-full scroll-trigger-3 ">
               {" "}
-              <img src="/assets/Slice 1 FB.svg" alt="" />
+              <img src="/assets/Slice 1 FB.svg" alt=""  className="animate-floating"/>
             </div>
-            <div className="max-w-[120px] w-0  h-full scroll-trigger-4">
+            <div className="max-w-[120px] w-0  h-full scroll-trigger-4 ">
               {" "}
-              <img src="/assets/Slice 1 PLANT.svg" alt="" />
+              <img src="/assets/Slice 1 PLANT.svg" alt="" className="animate-floating"/>
             </div>
           </div>
           <div className="min-h-[576px] h-full max-w-[362px] w-full">
