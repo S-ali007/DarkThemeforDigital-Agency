@@ -56,7 +56,6 @@ function ExploreOurPersonal() {
       height: "100%",
     });
 
-
     const lottieTrigger = ScrollTrigger.create({
       trigger: ".triggersec",
       onUpdate: (self) => {

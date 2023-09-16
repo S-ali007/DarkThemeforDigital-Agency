@@ -1,6 +1,8 @@
 import React from "react";
-import { useState } from "react";
+import { useState ,useEffect } from "react";
 import TypeWriterComponent from "./TypeWriterComponent";
+import { useInView } from "react-intersection-observer";
+
 
 function WeAreAwardWinning() {
   const [items, setitems] = useState([
@@ -20,6 +22,61 @@ function WeAreAwardWinning() {
       title: "Product Design",
     },
   ]);
+
+  const [isImageVisible, setImageVisible] = useState(false);
+  const { ref, inView } = useInView({
+    triggerOnce: false, // Only trigger the animation once
+    threshold: 1, // Adjust the threshold as needed
+  });
+
+  // Set isImageVisible to true when the image is in the viewport
+  useEffect(() => {
+    if (inView) {
+      setImageVisible(true);
+    }
+    else{
+      setImageVisible(false)
+    }
+  }, [inView]);
+
+
+// condition---------------------------
+  // const [isImageVisible, setIsImageVisible] = useState(false);
+  // // Detect when the image comes into the viewport
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const image = document.getElementById("award-winning-image");
+
+      
+  //     if (image) {
+  //       const rect = image.getBoundingClientRect();
+  //       console.log(rect)
+  //       const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+
+  //       console.log(windowHeight)
+
+  //       // Check if the image is at least partially in the viewport
+  //       if (rect.top < windowHeight && rect.bottom >= 0) {
+  //         setIsImageVisible(true);
+  //         console.log("true")
+  //       } else {
+  //         setIsImageVisible(false);
+  //         console.log("false")
+  //       }
+  //     }
+  //   };
+
+  //   // Attach the scroll event listener
+  //   window.addEventListener("scroll", handleScroll);
+
+  //   // Call the handleScroll function initially to check the image visibility
+  //   handleScroll();
+
+  //   // Clean up the event listener on unmount
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
   return (
     <div className=" bg-[#000A1F] max-w-[1920px] w-full  mx-auto pt-[127px] ">
       <div className="flex  items-center    max-w-[1430px] w-full mx-auto  justify-end gap-[64px]  ">
@@ -109,8 +166,9 @@ function WeAreAwardWinning() {
           </div>
         </div>
         {/* Right-side content Award winning img */}
-        <div className="max-w-[540px] w-full mt-[31px]">
-          <img src="/assets/weAreAwardWinnning.svg" alt="" />
+        <div className="max-w-[540px] w-full mt-[31px]" >
+          
+          <img src="/assets/weAreAwardWinnning.svg" alt=""  ref={ref} id="award-winning-image" className={` ${isImageVisible ? "animate-shake hover:animate-none cursor-pointer" : ""}`} />
         </div>
       </div>
     </div>

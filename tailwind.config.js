@@ -22,7 +22,9 @@ module.exports = {
         'hero-pattern': "url('/public/assets/hero-backgroung.svg')",
 
       },
-    
+      animation: {
+        shake: "shake 0.5s infinite",
+      },
     },
   },
   plugins: [],
