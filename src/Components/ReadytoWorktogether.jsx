@@ -9,7 +9,7 @@ function ReadytoWorktogether() {
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: ".container",
-      // markers:true,
+      markers:true,
       start: "center 70%",
       end:"top 10%",
       toggleActions: "restart none none reset"
