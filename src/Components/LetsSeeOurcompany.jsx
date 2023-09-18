@@ -24,7 +24,7 @@ function LetsSeeOurcompany() {
     },
   ]);
   return (
-    <div className="bg-[#000A1F] max-w-[1920px] w-full  mx-auto pt-[128px]">
+    <div className="bg-[#000A1F] max-w-[1920px] w-full  mx-auto pt-[128px]" id="letsseeourcompany">
       <div className="max-w-[1334px] w-full  mx-auto pl-[100px] mt-[50px] pt-[32px] pb-[10px] ">
         {/* main-content div */}
         <div className="flex gap-[307px]">

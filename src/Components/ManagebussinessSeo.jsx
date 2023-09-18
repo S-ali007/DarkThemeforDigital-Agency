@@ -4,32 +4,27 @@ import { gsap } from "gsap";
 import TypeWriterComponent from "./TypeWriterComponent";
 import { useRef, useEffect } from "react";
 function ManagebussinessSeo() {
-  
-
-gsap.registerPlugin(ScrollTrigger);
-
-
-  
-
-useEffect(() => {
-  console.log("useEffect is running");
-
   gsap.registerPlugin(ScrollTrigger);
 
-  const tl = gsap.timeline({
-    scrollTrigger: {
-      trigger: ".container",
-      start: "top 20%",
-      end: "center 70%",
-      scrub: 2,
-    },
-  });
+  useEffect(() => {
+    console.log("useEffect is running");
 
-  tl.from(".imageBussiness", {
-    xPercent:200,
-    opacity: 0
-  });
-}, []);
+    gsap.registerPlugin(ScrollTrigger);
+
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".container",
+        start: "top 20%",
+        end: "center 70%",
+        scrub: 2,
+      },
+    });
+
+    tl.from(".imageBussiness", {
+      xPercent: 200,
+      opacity: 0,
+    });
+  }, []);
   const [faqs, setfaqs] = useState([
     {
       question: "Why SEO Growth Business Strategy ?",
@@ -66,16 +61,16 @@ useEffect(() => {
   };
 
   return (
-    <div className=" bg-[#000A1F] max-w-[1920px] w-full  mx-auto pt-[128px] ">
-      <div className=" max-w-[1500px] w-full  mx-auto pl-[30px] pt-[50px] container">
-        <div className="flex   justify-end pb-[56px] gap-[108px] overflow-hidden">
+    <div className=" bg-[#000A1F] max-w-[1920px] w-full  mx-auto pt-[128px] overflow-hidden">
+      <div className=" w-full  mx-auto pl-[30px] pt-[50px] container ">
+        <div className="flex   justify-end pb-[56px] gap-[108px] ">
           <div className="">
             {/* main-heading-Manage-bussiness-seo */}
             <div>
               <div className="max-w-[432px] w-full text-[42px] font-Jost absolute ml-[38px] mt-[119px] font-[600] leading-[53px] text-[white] ">
-              <TypeWriterComponent
-                    text={"Manage Business SEO Optimization Easily"}/>
-                 
+                <TypeWriterComponent
+                  text={"Manage Business SEO Optimization Easily"}
+                />
               </div>
 
               <div className="max-w-[307px] w-full relative flex flex-col   ">
@@ -125,15 +120,16 @@ useEffect(() => {
                           </svg>
                         </div>
                       </div>
-                      
-                        <div className={`bg-[#232331] ${faq.open ? 'h-full ' : ' h-0 opacity-0'} overflow-hidden max-w-[440px] w-full   translate-x-0 transition duration-500 ease-in-out  ml-[65px]  pr-[13.3px] pb-[6px] pl-[8px]`}>
-                          <div className="text-[#67687A]">
-                            <p className="text-[16px]   font-kumbh leading-8">
-                              {faq.answer}
-                            </p>
-                          </div>
+
+                      <div
+                        className={`bg-[#232331] ${faq.open ? " max-h-[250px] " : " max-h-0 "} overflow-hidden h-[full] 0.3s ease-in-out max-w-[440px] w-full transition-all duration-700  ml-[65px]  pr-[13.3px] pb-[6px] pl-[8px]`}
+                      >
+                        <div className="text-[#67687A]">
+                          <p className="text-[16px]   font-kumbh leading-8">
+                            {faq.answer}
+                          </p>
                         </div>
-                     
+                      </div>
                     </>
                   );
                 })}
@@ -142,7 +138,11 @@ useEffect(() => {
           </div>
           {/* right-logo */}
           <div className=" imageBussiness max-w-[701px] w-full ">
-            <img src="/assets/managebussinessSeo-right-logo.svg" alt="" className="max-w-[701px]  "   />
+            <img
+              src="/assets/managebussinessSeo-right-logo.svg"
+              alt=""
+              className="max-w-[701px]  "
+            />
           </div>
         </div>
       </div>

@@ -11,7 +11,7 @@ function ReadytoWorktogether() {
   
     const tl = gsap.timeline({
       scrollTrigger: {
-        trigger: ".container",
+        trigger: ".Readycontainer",
         start: "top 20%",
         end: "center 70%",
         scrub: 2,
@@ -25,9 +25,9 @@ function ReadytoWorktogether() {
   }, []);
   
   return (
-    <div className=" bg-[#000A1F] max-w-[1920px] w-full flex justify-center mx-auto   " id="contact" >
+    <div className=" bg-[#000A1F] max-w-[1920px] w-full flex justify-center mx-auto  overflow-hidden " id="contact" >
       {/* main-div */}
-      <div className="container flex items-center max-w-[1194px] w-full   justify-between  overflow-hidden" >
+      <div className="Readycontainer flex items-center max-w-[1194px] w-full   justify-between  " >
         {/* img-left */}
         <div className="flex max-w-[540px] w-full mt-[90px] imagetyping">
         <img src="/assets/readyto work -Home5-12-7.svg" alt="" />

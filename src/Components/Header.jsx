@@ -36,7 +36,7 @@ function Header({ extraClasses }) {
             <img src="/assets/navbar-home-Arrow.svg" alt="" />
           </button>
         </a>
-        <a href="#About">
+        <a href="#letsseeourcompany">
           <button className="flex  gap-[4.83px] justify-center items-center  max-w-[53px] w-full text-[#FFFFFF] font-[500] text-[20px] hover:underline underline-offset-[8px]">
             <span>About</span>
             <img src="/assets/navbar-home-Arrow.svg" alt="" />
