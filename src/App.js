@@ -19,7 +19,7 @@ function App() {
 
     <div className="App mx-[auto] ">
       {/* Head */}
-      <div className="bg-[url('/public/assets/hero-backgroung.svg')] ">
+      <div className="bg-[url('/public/assets/hero-backgroung.svg')] trigger  ">
         <Header />
         <HeroSection />
       </div>

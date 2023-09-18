@@ -26,7 +26,7 @@ useEffect(() => {
   });
 
   tl.from(".imageBussiness", {
-    xPercent: 200,
+    xPercent:200,
     opacity: 0
   });
 }, []);
@@ -68,7 +68,7 @@ useEffect(() => {
   return (
     <div className=" bg-[#000A1F] max-w-[1920px] w-full  mx-auto pt-[128px] ">
       <div className=" max-w-[1500px] w-full  mx-auto pl-[30px] pt-[50px] container">
-        <div className="flex   justify-end pb-[56px] gap-[108px]">
+        <div className="flex   justify-end pb-[56px] gap-[108px] overflow-hidden">
           <div className="">
             {/* main-heading-Manage-bussiness-seo */}
             <div>
@@ -141,7 +141,7 @@ useEffect(() => {
             </div>
           </div>
           {/* right-logo */}
-          <div className=" imageBussiness max-w-[701px] w-full overflow-hidden">
+          <div className=" imageBussiness max-w-[701px] w-full ">
             <img src="/assets/managebussinessSeo-right-logo.svg" alt="" className="max-w-[701px]  "   />
           </div>
         </div>

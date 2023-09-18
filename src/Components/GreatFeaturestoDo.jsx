@@ -61,7 +61,7 @@ function GreatFeaturestoDo() {
           {/* right side */}
           <div className="flex   flex-col gap-[30px] items-center" >
             {/* item-1-graphic design */}
-            <div className="max-w-[470px] w-full flex  gap-[25px]  bg-[#292738] group-hover:transform transition-transform cursor-pointer   hover:translate-x-20    rounded-[8px] pt-[25px] pb-[23px] px-[30px]  justify-center align-middle">
+            <div className="max-w-[470px] w-full flex  gap-[25px]  bg-[#292738] group-hover:transform transition-transform cursor-pointer duration-500   hover:translate-x-20    rounded-[8px] pt-[25px] pb-[23px] px-[30px]  justify-center align-middle">
               <div className="max-w-[70px] w-full">
                 <img
                   src="/assets/Great work Graphic design item 1.svg"
@@ -97,7 +97,7 @@ function GreatFeaturestoDo() {
               {/* ------- */}
             </div>
              {/* item-2-graphic design */}
-             <div className="max-w-[470px] relative group-hover:transform transition-transform cursor-pointer  hover:translate-x-20 w-full flex  gap-[25px]  bg-[#292738]   rounded-[8px] pt-[25px] pb-[23px] px-[30px]  justify-center align-middle">
+             <div className="max-w-[470px] relative group-hover:transform transition-transform cursor-pointer duration-500  hover:translate-x-20 w-full flex  gap-[25px]  bg-[#292738]   rounded-[8px] pt-[25px] pb-[23px] px-[30px]  justify-center align-middle">
               <div className="max-w-[70px] w-full">
                 <img
                   src="/assets/Great work Graphic design item 2.svg"
@@ -133,7 +133,7 @@ function GreatFeaturestoDo() {
               {/* ------- */}
             </div>
              {/* item-3-graphic design */}
-             <div className="max-w-[470px] relative   w-full flex  gap-[25px] group-hover:transform transition-transform cursor-pointer  hover:translate-x-[130px] bg-[#292738]   rounded-[8px] pt-[25px] pb-[23px] px-[30px]  justify-center align-middle">
+             <div className="max-w-[470px] relative   w-full flex  gap-[25px] group-hover:transform transition-transform cursor-pointer duration-500  hover:translate-x-[130px] bg-[#292738]   rounded-[8px] pt-[25px] pb-[23px] px-[30px]  justify-center align-middle">
               <div className="max-w-[70px] w-full">
                 <img
                   src="/assets/Great work Graphic design item 3.svg"
@@ -169,7 +169,7 @@ function GreatFeaturestoDo() {
               {/* ------- */}
             </div>
              {/* item-4-graphic design */}
-             <div className="max-w-[470px] relative  hover:translate-x-[-38px] group-hover:transform transition-transform cursor-pointer w-full flex  gap-[25px]  bg-[#292738]   rounded-[8px] pt-[25px] pb-[23px] px-[30px]  justify-center align-middle">
+             <div className="max-w-[470px] relative  hover:translate-x-[-38px] group-hover:transform transition-transform cursor-pointer duration-500 w-full flex  gap-[25px]  bg-[#292738]   rounded-[8px] pt-[25px] pb-[23px] px-[30px]  justify-center align-middle">
               <div className="max-w-[70px] w-full">
                 <img
                   src="/assets/Great work Graphic design item 4.svg"
@@ -205,7 +205,7 @@ function GreatFeaturestoDo() {
               {/* ------- */}
             </div>
              {/* item-5-graphic design */}
-             <div className="max-w-[470px]  relative   group-hover:transform transition-transform cursor-pointer  hover:translate-x-[-201px] w-full flex  gap-[25px]  bg-[#292738]   rounded-[8px] pt-[25px] pb-[23px] px-[30px]  justify-center align-middle">
+             <div className="max-w-[470px]  relative   group-hover:transform transition-transform cursor-pointer duration-500  hover:translate-x-[-201px] w-full flex  gap-[25px]  bg-[#292738]   rounded-[8px] pt-[25px] pb-[23px] px-[30px]  justify-center align-middle">
               <div className="max-w-[70px] w-full">
                 <img
                   src="/assets/Great work Graphic design item 5.svg"

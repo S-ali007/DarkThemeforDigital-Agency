@@ -79,22 +79,22 @@ function Footer() {
             {/* services */}
             <div className="max-w-[146.75px] w-full flex flex-col gap-[25px] ">
               <div className="max-w-[83px] w-full text-[22px]  font-Jost font-[500] leading-[26px] text-[#FFF]">
-                Services
+                  Services
               </div>
               <div className="flex flex-col gap-[20px] ">
-                <a href="/" className="max-w-[115px] w-full text-[16px]  font-kumbh text-[#fff] leading-[26px] group-hover: border-sky-600  hover:border-b">
-                 Product Design
+                <a href="/" className="max-w-[115px] w-full text-[16px]  font-kumbh text-[#fff] leading-[26px]   hover:border-b-sky-600  hover:border-b   border-b border-b-transparent ">
+                  <div className="  border-b-[2px] border-transparent">Product Design</div> 
                 </a>
-                <a href="/" className="max-w-[146.75px] w-full text-[16px]  font-kumbh text-[#FFF] leading-[26px] group-hover: border-sky-600  hover:border-b">
+                <a href="/" className="max-w-[146.75px] w-full text-[16px]  font-kumbh text-[#FFF] leading-[26px]  hover:border-b-sky-600  hover:border-b   border-b border-b-transparent">
                   Business Consulting
                 </a>
-                <a href="/" className="max-w-[126.64px] w-full text-[16px]  font-kumbh text-[#FFF] leading-[26px] group-hover: border-sky-600  hover:border-b">
+                <a href="/" className="max-w-[126.64px] w-full text-[16px]  font-kumbh text-[#FFF] leading-[26px]  hover:border-b-sky-600  hover:border-b   border-b border-b-transparent">
                   Custome Service
                 </a>
-                <a href="/" className="max-w-[105.84px] w-full text-[16px]  font-kumbh text-[#FFF] leading-[26px] group-hover: border-sky-600  hover:border-b">
+                <a href="/" className="max-w-[105.84px] w-full text-[16px]  font-kumbh text-[#FFF] leading-[26px]  hover:border-b-sky-600  hover:border-b   border-b border-b-transparent">
                   Brand Identity
                 </a>
-                <a href="/" className="max-w-[133.11px] w-full text-[16px]  font-kumbh text-[#FFF] leading-[26px] group-hover: border-sky-600  hover:border-b">
+                <a href="/" className="max-w-[133.11px] w-full text-[16px]  font-kumbh text-[#FFF] leading-[26px]  hover:border-b-sky-600  hover:border-b   border-b border-b-transparent">
                   SEO Optimization
                 </a>
               </div>
@@ -105,16 +105,16 @@ function Footer() {
                 Contact
               </div>
               <div className="flex flex-col gap-[20px]">
-                <a href="/" className="max-w-[197.95px] w-full text-[16px]  font-kumbh text-[#FFF] leading-[26px] group-hover: border-sky-600  hover:border-b">
+                <a href="/" className="max-w-[197.95px] w-full text-[16px]  font-kumbh text-[#FFF] leading-[26px] hover:border-b-sky-600  hover:border-b   border-b border-b-transparent hover:animate-underline-left-to-right">
                   785 Main Street, 2nd Block melbourne, australia
                 </a>
-                <a href="/" className="max-w-[149.75px] w-full text-[16px]  font-kumbh text-[#FFF] leading-[26px] group-hover: border-sky-600  hover:border-b">
+                <a href="/" className="max-w-[149.75px] w-full text-[16px]  font-kumbh text-[#FFF] leading-[26px]   hover:border-b-sky-600  hover:border-b   border-b border-b-transparent">
                   support@gmail.com
                 </a>
-                <a href="/" className="max-w-[126.64px] w-full text-[16px]  font-kumbh text-[#FFF] leading-[26px] group-hover: border-sky-600  hover:border-b">
+                <a href="/" className="max-w-[126.64px] w-full text-[16px]  font-kumbh text-[#FFF] leading-[26px]  hover:border-b-sky-600  hover:border-b   border-b border-b-transparent">
                   Custome Service
                 </a>
-                <a href="/" className="max-w-[128px] w-full text-[16px]  font-kumbh text-[#FFF] leading-[26px] group-hover: border-sky-600  hover:border-b">
+                <a href="/" className="max-w-[128px] w-full text-[16px]  font-kumbh text-[#FFF] leading-[26px]  hover:border-b-sky-600  hover:border-b   border-b border-b-transparent">
                   +000 (123) 456 88
                 </a>
               </div>
@@ -128,7 +128,7 @@ function Footer() {
                 <a href="/" className="max-w-[287.78px] w-full text-[24px]  font-Jost font-[500] leading-[35px] text-[#FFF]    ">
                   Get Every Single Update to Join Our Newsletter
                 </a>
-                <div className="max-w-[304px] w-full flex   justify-between    pt-[19px] pb-[20px] border-b-[1px] ">
+                <div className="max-w-[304px] w-full flex   justify-between    pt-[19px] pb-[20px] border-b-[1px] transform transition-transform hover:scale-105 hover:cursor-pointer  ">
                   <div className="flex gap-[11.8px] items-center">
                     <div>
                       <svg

@@ -124,7 +124,7 @@ function HeroSection({ extraClasses }) {
   // }, []);
 
   return (
-    <div div className="trigger  " id="home">
+    <div div className=" " id="home">
       <div className=" flex flex-col justify-center items-center relative pr-[90px] ">
         <div className=" flex justify-between mx-auto px-[50px] absolute top-0 max-w-[1422px] w-full ">
           <div className="pt-[50px] scroll-trigger-element2 w-0">

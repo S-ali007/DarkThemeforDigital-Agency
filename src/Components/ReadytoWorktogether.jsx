@@ -6,7 +6,6 @@ import { useEffect } from "react";
 
 function ReadytoWorktogether() {
   useEffect(() => {
-    console.log("useEffect is running");
   
     gsap.registerPlugin(ScrollTrigger);
   
@@ -19,20 +18,19 @@ function ReadytoWorktogether() {
       },
     });
   
-    tl.from(".image1", {
+    tl.from(".imagetyping", {
       xPercent: -200,
       opacity:0
-      
     });
   }, []);
   
   return (
-    <div className="container bg-[#000A1F] max-w-[1920px] w-full flex justify-center mx-auto  " id="contact" >
+    <div className=" bg-[#000A1F] max-w-[1920px] w-full flex justify-center mx-auto   " id="contact" >
       {/* main-div */}
-      <div className="flex items-center max-w-[1194px] w-full   justify-between  " >
+      <div className="container flex items-center max-w-[1194px] w-full   justify-between  overflow-hidden" >
         {/* img-left */}
-        <div className="flex max-w-[540px] w-full mt-[90px] image1">
-          <div className=" w-full "><img src="/assets/readyto work -Home5-12-7.svg" alt="" /></div>
+        <div className="flex max-w-[540px] w-full mt-[90px] imagetyping">
+        <img src="/assets/readyto work -Home5-12-7.svg" alt="" />
         </div>
         {/* right-content */}
 
@@ -77,7 +75,7 @@ function ReadytoWorktogether() {
               />
             </div>
 
-            <button className="max-w-[180px]  rounded-[4px] items-center flex justify-center h-[54px] bg-gradient-to-r from-[#6D18EF] to-[#186EF2]  w-full px-[33px] cursor-pointer ">
+            <button className="max-w-[180px]  rounded-[4px] items-center flex justify-center h-[54px] bg-gradient-to-r from-[#6D18EF] to-[#186EF2]  w-full px-[33px] cursor-pointer transform transition-transform hover:scale-105 hover:cursor-pointer hover:rounded-[4px]  ">
           <div className="max-w-[113px] w-full  font-Nunito text-[17px] font-[600]   text-[#FFF] text-center">Send Message</div>
           </button>
           </div>
