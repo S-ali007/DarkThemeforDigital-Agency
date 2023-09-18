@@ -137,7 +137,7 @@ function ManagebussinessSeo() {
             </div>
           </div>
           {/* right-logo */}
-          <div className="  max-w-[701px] w-full  animate-ring">
+          <div className=" imageBussiness max-w-[701px] w-full  ">
             <img
               src="/assets/managebussinessSeo-right-logo.svg"
               alt=""
