@@ -12,6 +12,8 @@ import ReadytoWorktogether from "./Components/ReadytoWorktogether";
 import Footer from "./Components/Footer";
 
 function App() {
+
+  
   return (
 
 
@@ -21,7 +23,6 @@ function App() {
         <Header />
         <HeroSection />
       </div>
-        
       <ExploreOurPersonal/>
       <WeAreAwardWinning/>
       <GreatFeaturestoDo/>

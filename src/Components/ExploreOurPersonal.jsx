@@ -32,7 +32,7 @@ function ExploreOurPersonal() {
     },
   ]);
 
-  gsap.registerPlugin(ScrollTrigger);
+  // gsap.registerPlugin(ScrollTrigger);
 
   useEffect(() => {
     const tl = gsap.timeline({

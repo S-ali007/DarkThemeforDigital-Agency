@@ -13,7 +13,7 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import { useRef, useEffect } from "react";
 
-gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(ScrollTrigger);
 
 function HeroSection({ extraClasses }) {
   const swiperRef = useRef();

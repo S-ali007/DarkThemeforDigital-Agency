@@ -6,7 +6,7 @@ import { useRef, useEffect } from "react";
 function ManagebussinessSeo() {
   
 
-gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(ScrollTrigger);
 
 
   
@@ -39,7 +39,7 @@ gsap.registerPlugin(ScrollTrigger);
       end: '+=500',
       
       pin: true,
-      marker: true,
+      // marker: true,
       pinType: 'fixed',
       onEnter: () => {
       },

@@ -2,27 +2,28 @@ import React from "react";
 import TypeWriterComponent from "./TypeWriterComponent";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { gsap } from "gsap";
+import { useEffect } from "react";
 
 function ReadytoWorktogether() {
+  useEffect(() => {
+    console.log("useEffect is running");
   
+    gsap.registerPlugin(ScrollTrigger);
   
-  const tl = gsap.timeline({
-    scrollTrigger: {
-      trigger: ".container",
-      // markers:true,
-      start: "center 70%",
-      end:"top 10%",
-      toggleActions: "restart none none reset"
-    }
-  });
-
-  tl.set('.image1', { autoAlpha: 1 });
-  tl.from('.image1', {
-    xPercent: -200,
-    ease: "power2"
-  });
-
-
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".container",
+        start: "top 20%",
+        end: "center 70%",
+        scrub: 2,
+      },
+    });
+  
+    tl.from(".image1", {
+      xPercent: -200,
+    });
+  }, []);
+  
   return (
     <div className="container bg-[#000A1F] max-w-[1920px] w-full flex justify-center mx-auto  " id="contact" >
       {/* main-div */}
