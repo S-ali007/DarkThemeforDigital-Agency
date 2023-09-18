@@ -25,6 +25,7 @@ module.exports = {
       animation: {
         shake: "shake 0.5s infinite",
         floating: "floating 3s ease-in-out infinite",
+        ring : "ring 4s .7s ease-in-out infinite",
       },
     },
   },

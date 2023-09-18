@@ -89,7 +89,7 @@ function ManagebussinessSeo() {
                 </p>
               </div>
 
-              <div className="mt-[10px]">
+              <div className="mt-[10px] min-h-[320px] h-full">
                 {faqs.map((faq, id) => {
                   return (
                     <>
@@ -122,7 +122,7 @@ function ManagebussinessSeo() {
                       </div>
 
                       <div
-                        className={`bg-[#232331] ${faq.open ? " max-h-[250px] " : " max-h-0 "} overflow-hidden h-[full] 0.3s ease-in-out max-w-[440px] w-full transition-all duration-700  ml-[65px]  pr-[13.3px] pb-[6px] pl-[8px]`}
+                        className={`bg-[#232331] ${faq.open ? " max-h-[250px] " : " max-h-0 " } overflow-hidden h-[full] 0.3s ease-in-out max-w-[440px] w-full transition-all duration-700  ml-[65px]  pr-[13.3px] pb-[6px] pl-[8px]`}
                       >
                         <div className="text-[#67687A]">
                           <p className="text-[16px]   font-kumbh leading-8">
@@ -137,7 +137,7 @@ function ManagebussinessSeo() {
             </div>
           </div>
           {/* right-logo */}
-          <div className=" imageBussiness max-w-[701px] w-full ">
+          <div className="  max-w-[701px] w-full  animate-ring">
             <img
               src="/assets/managebussinessSeo-right-logo.svg"
               alt=""
