@@ -6,51 +6,30 @@ import { useRef, useEffect } from "react";
 function ManagebussinessSeo() {
   
 
-// gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger);
 
 
   
 
-  useEffect(() => {
+useEffect(() => {
+  console.log("useEffect is running");
 
-    const tl = gsap.timeline({
- 
-      paused:true,
-    });
+  gsap.registerPlugin(ScrollTrigger);
 
-    tl.to(".scroll-trigger-element1", {
-      width: "100%",
-      height: "100%",
-    });
-
-    
-    const lottieTrigger = ScrollTrigger.create({
-
-      trigger: '.sec2',
-      onUpdate: (self) => {
-        console.log(self.progress);
-        tl.progress(self.progress)
-      },
-      duration:5,
-      preventOverlaps: true,
-      refreshPriority: 0,
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".container",
+      start: "top 20%",
+      end: "center 70%",
       scrub: 2,
-      start: 'top',
-      end: '+=500',
-      
-      pin: true,
-      // marker: true,
-      pinType: 'fixed',
-      onEnter: () => {
-      },
-      
-    });
+    },
+  });
 
-    return () => {
-      lottieTrigger.kill();
-    };
-
-  }, []);
+  tl.from(".imageBussiness", {
+    xPercent: 200,
+    opacity: 0
+  });
+}, []);
   const [faqs, setfaqs] = useState([
     {
       question: "Why SEO Growth Business Strategy ?",
@@ -88,7 +67,7 @@ function ManagebussinessSeo() {
 
   return (
     <div className=" bg-[#000A1F] max-w-[1920px] w-full  mx-auto pt-[128px] ">
-      <div className=" max-w-[1500px] w-full  mx-auto pl-[30px] pt-[50px]">
+      <div className=" max-w-[1500px] w-full  mx-auto pl-[30px] pt-[50px] container">
         <div className="flex   justify-end pb-[56px] gap-[108px]">
           <div className="">
             {/* main-heading-Manage-bussiness-seo */}
@@ -162,7 +141,7 @@ function ManagebussinessSeo() {
             </div>
           </div>
           {/* right-logo */}
-          <div className="  max-w-[701px] w-full">
+          <div className=" imageBussiness max-w-[701px] w-full overflow-hidden">
             <img src="/assets/managebussinessSeo-right-logo.svg" alt="" className="max-w-[701px]  "   />
           </div>
         </div>

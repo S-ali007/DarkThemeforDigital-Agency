@@ -21,6 +21,8 @@ function ReadytoWorktogether() {
   
     tl.from(".image1", {
       xPercent: -200,
+      opacity:0
+      
     });
   }, []);
   
