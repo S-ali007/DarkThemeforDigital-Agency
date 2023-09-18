@@ -56,7 +56,7 @@ useEffect(() => {
   const handleClick = (id) => {
     const newArr = faqs.map((item) => {
       if (item.id === id) {
-        return { ...item, open: true };
+        return { ...item, open: !item.open };
       } else {
         return { ...item, open: false };
       }
@@ -87,14 +87,14 @@ useEffect(() => {
                 </div>
               </div>
               {/* paragraph-section-left*/}
-              <div className="mt-[72px]  text-[#A8ADB3] text-[16px]  font-kumbh leading-[32px] max-w-[437px] w-full ml-[40px]">
+              <div className="mt-[24px]  text-[#A8ADB3] text-[16px]  font-kumbh leading-[32px] max-w-[437px] w-full ml-[40px]">
                 <p>
                   Quis autem vel eum iure reprehenderit qui in ea voluptates
                   velit esse quam molestiae consequatur velillum
                 </p>
               </div>
 
-              <div className="">
+              <div className="mt-[10px]">
                 {faqs.map((faq, id) => {
                   return (
                     <>
@@ -102,7 +102,7 @@ useEffect(() => {
                         onClick={() => {
                           handleClick(faq.id);
                         }}
-                        className="max-w-[440px] w-full ml-[65px] mt-[10px] flex justify-center gap-[91px] bg-[#292738] border-b-[#2E2D2D] align-middle  pt-[17px] pr-[15.8px] pb-[18px] pl-[8px] hover:cursor-pointer"
+                        className="max-w-[440px] w-full ml-[65px] mt-[5px] flex justify-center gap-[91px] bg-[#292738] border-b-[#2E2D2D] align-middle  pt-[17px] pr-[15.8px] pb-[18px] pl-[8px] hover:cursor-pointer"
                       >
                         <div className="max-w-[309px] w-full font-Jost text-[#fff] text-[18px] font-[600]  ">
                           {faq.question}
@@ -125,15 +125,15 @@ useEffect(() => {
                           </svg>
                         </div>
                       </div>
-                      {faq.open && (
-                        <div className="bg-[#232331] max-w-[440px] w-full ml-[65px] pt-[6px] pr-[13.3px] pb-[6px] pl-[8px]">
+                      
+                        <div className={`bg-[#232331] ${faq.open ? 'h-full ' : ' h-0 opacity-0'} overflow-hidden max-w-[440px] w-full   translate-x-0 transition duration-500 ease-in-out  ml-[65px]  pr-[13.3px] pb-[6px] pl-[8px]`}>
                           <div className="text-[#67687A]">
                             <p className="text-[16px]   font-kumbh leading-8">
                               {faq.answer}
                             </p>
                           </div>
                         </div>
-                      )}
+                     
                     </>
                   );
                 })}
