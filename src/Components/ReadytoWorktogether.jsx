@@ -75,7 +75,7 @@ function ReadytoWorktogether() {
               />
             </div>
 
-            <button className="max-w-[180px]  rounded-[4px] items-center flex justify-center h-[54px] bg-gradient-to-r from-[#6D18EF] to-[#186EF2]  w-full px-[33px] cursor-pointer transform transition-transform hover:scale-105 hover:cursor-pointer hover:rounded-[4px]  ">
+            <button className="max-w-[180px]  rounded-[4px] items-center flex justify-center h-[54px] bg-gradient-to-r from-[#6D18EF] to-[#186EF2] hover:bg-gradient-to-r hover:from-[#186EF2] hover:to-[#6D18EF] w-full px-[33px] cursor-pointer transform transition-transform  hover:cursor-pointer hover:rounded-[4px]  ">
           <div className="max-w-[113px] w-full  font-Nunito text-[17px] font-[600]   text-[#FFF] text-center">Send Message</div>
           </button>
           </div>

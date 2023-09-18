@@ -128,7 +128,7 @@ function Footer() {
                 <a href="/" className="max-w-[287.78px] w-full text-[24px]  font-Jost font-[500] leading-[35px] text-[#FFF]    ">
                   Get Every Single Update to Join Our Newsletter
                 </a>
-                <div className="max-w-[304px] w-full flex   justify-between    pt-[19px] pb-[20px] border-b-[1px] transform transition-transform hover:scale-105 hover:cursor-pointer  ">
+                <div className="max-w-[304px] w-full flex   justify-between    pt-[19px] pb-[20px] border-b-[1px] transform transition-transform cursor-pointer  ">
                   <div className="flex gap-[11.8px] items-center">
                     <div>
                       <svg
@@ -155,7 +155,7 @@ function Footer() {
                     </div>
                   </div>
                   {/* signup-btn */}
-                  <button className=" flex max-w-[80px] w-full gap-[6.52px] items-center ">
+                  <button className=" flex max-w-[80px] w-full gap-[6.52px] items-center transform transition-transform hover:scale-105 hover:cursor-pointer ">
                     <div className=" max-w-[67px] w-full text-[16px] font-kumbh  font-[600] text-[#fff]">
                       Sign Up{" "}
                     </div>
